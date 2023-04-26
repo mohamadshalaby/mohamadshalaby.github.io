@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="google-site-verification" content="V8yAN9OcvmHQEIYNfzDR9itrJxWrWtcyPRpGXf_8VQ8" />  <!-- this is tag from google console so the page hopefully appears @ google search -->
+
+    <title>Mohamad Shalaby</title>
+	
+	<link href="main.css" rel="stylesheet"> <!-- link to the style files -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script>
+        // Function to show the selected section
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.getElementsByTagName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+		function getCurrentSectionId() {
+		  const sections = document.querySelectorAll('section'); // Get all sections
+		  for (let i = 0; i < sections.length; i++) {
+			if (sections[i].matches(':target')) { // Check if section is currently targeted
+			  return sections[i].id; // Return the ID of the targeted section
+			}
+		  }
+		  return null; // Return null if no section is currently targeted
+		}
+         
+        // Show 'home' section by default when page loads
+        window.onload = function() {
+			// Restore the scroll position
+			
+			var secid = getCurrentSectionId();
+			// console.log('Current Section ID:', secid);
+
+			if(secid){
+				window.scrollTo(0, 0);
+				showSection(secid);
+			}
+			else{
+				window.scrollTo(0, 0);
+				showSection('home');
+			}
+        };  
+
+
+    </script>
+    
+</head> <!-- end of head section -->
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <!-- <h1>Menu</h1>
+            <figure>
+			  <img src="SPIC.jpeg" alt="" style="width:400%; margin: -100% 0px 200% -160%;vertical-align=top;">
+			</figure>
+				-->
+            <a href="#home" 		onclick="showSection('home');">Home</a> 
+            <a href="#research" 	onclick="showSection('research');">Research</a>
+            <a href="#talks" 		onclick="showSection('talks');">Talks</a>
+            <a href="#publication"	onclick="showSection('publication');">Publications</a>
+            <a href="#contact" 		onclick="showSection('contact');">Contact</a>
+        </aside>
+    
+        <div class="content">
+
+			<section id="home">
+				<div class="content-wrapper">
+					<div class="text-column">
+					<h1>Welcome to my website</h1>
+					<p>I am a senior postdoctoral researcher in the  Leibniz Institute for Astrophysics (AIP)</p>
+					</div>
+					<div class="image-column">
+						<img src="PIC.jpeg" alt="" style="width=10%;">
+					</div>
+				</div>
+			</section>
+
+       
+            <section id="research"> 
+                <h1>Research</h1>
+                <p>	My research focuses on studying acceleration, transport and non-thermal radiation processes from </p>
+                <p> plasmas that permeate our visible universe, i.e., from stellar to intergalactic environments </p>
+                <p> and thus their implied complex feedback on various observables.</p>
+            </section>
+            
+            <section id="talks">
+                <h1>Talks</h1>
+                <p>This is the talks section.</p>
+                <p>Here you can find information about my past and upcoming talks.</p>
+            </section>
+
+            <section id="publication">
+				<h1> List of publications @<a href="https://scholar.google.ca/citations?user=KCgpd4UAAAAJ&hl=en" target="_blank" >Google scholar</a>
+					   & @<a href="https://ui.adsabs.harvard.edu/public-libraries/Wc1euMqSQ8Ct8k_IkCdo1g" target="_blank" >ADS Library</a> 
+				</h1>
+
+				<h2> Fist author publications </h2>
+
+				<ol reversed start="16">
+
+				<li> <strong> shalaby, M., </strong> Lemmerz, R., Thomas, T., Pfrommer, C., 2022 “The mechanism of efficient electron accel- eration in parallel non-relativistic shocks”, ApJ 932 86 , arXiv:2202.05288
+				<li> <strong> shalaby, M., </strong> Thomas, T, Pfrommer, C., 2021 “A new Cosmic ray-driven instability”, ApJ 908 206, arXiv:2010.11197
+
+				<li> <strong> shalaby, M., </strong> Broderick, A.E., Chang, P., Pfrommer, C., Puchwein, E., Lamberts, A., 2020 “The growth of the longitudinal beam-plasma instability in the presence of an inhomogeneous background”, JPP 86, 2, 535860201, arXiv:2003.02849 
+				<br> <em> This article was Featured by the Journal of plasma physics </em> </br>
+
+				<li> <strong> shalaby, M., </strong> Broderick, A.E., Chang, P., Pfrommer, C., Lamberts, A., Puchwein, E., 2018 “Growth of beam-plasma instabilities in presence of inhomogeneity” ApJ 859 45 & arXiv:1804.05071
+
+				<li> <strong> shalaby, M., </strong> Broderick, A. E., Chang, P., Pfrommer, C., Lamberts, A. & Puchwein, E., 2017 “Importance of resolving the spectral support of beam-plasma instabilities in simulations”, ApJ 848 81 & arXiv:1704.00014
+
+				<li> <strong> shalaby, M., </strong> Broderick, A. E., Chang, P., Pfrommer, C., Lamberts, A. & Puchwein, E., 2017 “SHARP: Spatially Higher-order, Relativistic Particle-in-Cell code”, ApJ 841 52 & arxiv:1702.04732
+
+				<li> <strong> Shalaby, M., </strong> 2012 “Dynamics and Light Propagation in a Universe with Discrete Matter Content”, arxiv:1205.6877
+				</ol>
+
+				<h2> Publications with collaborators </h2>
+				<ol reversed >
+
+				<li> Lemmerz, R., <strong> shalaby, M., </strong> Thomas, T., Pfrommer, C., 2022 “Coupling multi-fluid dynamics equipped with Landau closures to the particle-in-cell method”, arXiv:2301.04679
+
+				<li> Lamberts, A., Puchwein, E., Pfrommer, C., Chang, P., <strong> shalaby, M., </strong> Broderick, A.E., Tiede, P., Rudie, G., 2022 “Constraining blazar heating with the 2 < z < 3 Lyman-α forest”, MNRAS, 512, 3045 & arxiv:2201.13175
+
+				<li> Broderick, A.E.,Tiede, P., Chang, P., Lamberts, A., Pfrommer, C., Puchwein, E., <strong> shalaby, M., </strong> Werhahn, M., 2018 “Missing Gamma-ray Halos and the Need for New Physics in the Gamma-ray Sky“, ApJ 868 87 & arXiv:1808.02959
+
+				<li> Tiede, P., Broderick, A.E., <strong> shalaby, M., </strong> Pfrommer, C., Puchwein, E., Chang, P. & Lamberts, A., 2017. “Constraints on the Intergalactic Magnetic Field from Bow Ties in the Gamma-ray Sky”, ApJ 892 123 & arxiv:1702.02586
+
+				<li> Tiede, P., Broderick, A.E., <strong> shalaby, M., </strong> Pfrommer, C., Puchwein, E., Chang, P. & Lamberts, A., 2017. “Bow Ties in the Sky II: Searching for Gamma-ray Halos in the Fermi Sky Using Anisotropy”, ApJ 850 157 & arxiv:1702.02585
+				
+				<li> Chang, P., Broderick, A.E., Pfrommer, C., Puchwein, E., Lamberts, A., <strong> shalaby, M., </strong> & Geoffrey, V., 2016. “The Linear Instability of Dilute Ultrarelativistic e± Pair Beams”, ApJ 833 118 & arxiv:1610.02040
+				
+				<li> Broderick, A.E., Tiede, P., <strong> shalaby, M., </strong> Pfrommer, C., Puchwein, E., Chang, P. & Lamberts, A., 2016. “Bow Ties in the Sky I: The Angular Structure of Inverse Compton Gamma-ray Halos in the Fermi Sky”, ApJ 832 109 & arxiv:1609.00387
+				
+				<li> Lamberts, A., Chang, P., Pfrommer, C., Puchwein, E., Broderick, A.E. & Shalaby, M. 2015. “Patchy blazar heating: diversifying the thermal history of the intergalactic medium”, ApJ 811 19 & arxiv:1502.07980
+				
+				<li> Chang, P., Broderick, A.E., Pfrommer, C., Puchwein, E., Lamberts, A. & Shalaby, M. 2014 “The Effect of Landau Damping on Ultrarelativistic Beam Plasma Instabilities”, ApJ 797 110 & arxiv:1410.3797 </li>
+				
+				</ol>
+
+				<h2>Articles in preparation </h2>
+				
+				<p>1. Shalaby, M. + 2023 “The coupling of ISM CRs in the presence of strong ion-neutral damping”</p>
+
+				<p>2. Shalaby, M. + 2023 “A mechamism for radio-emission at cluster merger shocks”</p>
+            </section>
+
+            <section id="contact">
+                <h1>Contact</h1>
+                <p>Leibniz Institute for Astrophysics (AIP),	An der Sternwarte 16, 14482 Potsdam, Germany</p>
+                <p> <a href="mailto:mshalaby@live.ca">mshalaby@live.ca</a> </p>
+            </section>
+                        
+        </div>
+    </div>
+	<footer>
+		<br> © Mohamad Shalaby &nbsp;&nbsp;</br>
+		<br>Last update: April 23, 2023 &nbsp;&nbsp;</br>
+    </footer>
+
+		 
+</body>
+</html>
+
