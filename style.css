@@ -61,6 +61,10 @@ li{
   margin: 10px 0;
 }
 
+p{
+  margin: 10px 0;
+}
+
 nav li {
     display: inline-block;
     margin-right: 20px;
@@ -105,6 +109,28 @@ footer {
     width: 100%;
 }
 
+.content-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.text-column {
+    display: block;
+	flex-grow: 1;
+	width: 50%;
+	padding-top: 0px; /* Add some spacing between the text and image */
+    text-align: left;
+}
+
+.image-column {
+	flex-shrink: 0;
+    display: block;
+	width: 35%;
+	padding-left: 0px; /* Add some spacing between the text and image */
+	padding-top: 00px; /* Add some spacing between the text and image */
+}
+
+
 Responsive Styles 
 @media only screen and (max-width: 600px) {
     nav li {
@@ -117,3 +143,5 @@ Responsive Styles
         position: relative;
     }
 }
+
+
