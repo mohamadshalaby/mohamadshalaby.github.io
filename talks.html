@@ -23,6 +23,32 @@
 	  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
 
+
+<script>
+    function toggleTab(tabId, element) {
+        var tabContent = document.getElementById(tabId);
+        var isActive = tabContent.style.display === 'block';
+
+        // Hide all tab contents
+        var tabContents = document.querySelectorAll('.tab-content');
+        tabContents.forEach(function(content) {
+            content.style.display = 'none';
+        });
+
+        // Remove active class from all tabs
+        var tabs = document.querySelectorAll('.tab');
+        tabs.forEach(function(tab) {
+            tab.classList.remove('active-tab');
+        });
+
+        // If the clicked tab was not active, show the tab content
+        if (!isActive) {
+            tabContent.style.display = 'block';
+            element.classList.add('active-tab');
+        }
+    }
+</script>
+
 </head>
 
 <body>
@@ -59,23 +85,23 @@
 				
 			<li> <b>26.10.2023</b> <i>Strong Gravity Seminar, Perimeter Institute for Theoretical Physics</i> Waterloo, Canada<br> <i>Talk: Unveiling a Novel Plasma Instability: Impacts on Galaxy Formation and Electron Acceleration at Shocks</i>
 				<p>
-<!--
-					<center> <iframe width=60% height="300" src="https://streamer2.perimeterinstitute.ca/mp4-med/23100116.mp4" title="pirsa.org 23100116" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
--->
 
-					<center> <iframe width=60% height="300" src="https://streamer2.perimeterinstitute.ca/mp4-med/23100116.mp4" title="pirsa.org 23100116" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
+				<center>  <div class="tab" onclick="toggleTab('videoTab2', this)">Show/Hide video recording</div> </center>
+				<div id="videoTab2" class="tab-content"> 
+						<center> <iframe width=60% height="300" src="https://streamer2.perimeterinstitute.ca/mp4-med/23100116.mp4" title="pirsa.org 23100116" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
+				</div>
 				</p>
+
 			<li> <b>03.10.2023</b> <i>Astro-plasma group meeting, CITA</i> Toronto, Canada<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic electron-ion shocks</i>
 			<li> <b>23.08.2023</b> <i>Cosmology & High-Energy Astrophysics Section, 2023 group retreat </i>Potsdam, Germany<br> <i>Talk: Plasma Astrophysics Efforts at Our Section</i>
 			<li> <b>24.11.2022</b> <i>Potsdam Workshop on Particle Acceleration and Transport, AIP </i>Potsdam, Germany<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
 			<li> <b>18.10.2022</b> <i>Workshop on Cosmic ray transport and magnetic fields in the ISM and the CGM, Ruhr-Universtitat </i>Bochum, Germany<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
 			<li> <b>21.09.2022</b> <i>Astro Seminar, Waterloo Center for Astrophysics </i>Waterloo, Canada<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
 				<p>	
+				<center>  <div class="tab" onclick="toggleTab('videoTab1', this)">Show/Hide video recording</div> </center>
+				<div id="videoTab1" class="tab-content"> 
 					<center> <iframe width=60% height="300" src="https://www.youtube.com/embed/BQcDROftzpE?si=UQY7KPE_VpUc62W2" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
-
-<!--
-					<center> <iframe width=60% height="300" src="https://www.youtube.com/embed/BQcDROftzpE?si=UQY7KPE_VpUc62W2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
--->
+				</div>
 
 				</p>
 			<li> <b>20.04.2022</b> <i>Workshop on Jet Composition and Radiative Processes, Virual </i> <br> <i>Talk: Kinetic vs Fluid modeling for the evolution of Astrophysical plasma</i>
