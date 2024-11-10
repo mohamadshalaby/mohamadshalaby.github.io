@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallel shocks: impact of ion-to-electrons mass ratio</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .intro-text {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+            color: #333;
+            max-width: 800px;
+        }      
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            width: 80%;
+            max-width: 800px;
+        }
+        .video-panel {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+        .video-title {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="intro-text">
+        Here is a collection of our featured videos. Each panel highlights a unique video showcasing different content. Enjoy watching!
+    </div>
+    	
+    <div class="container">
+        <div class="video-panel">
+            <div class="video-title">M_A = 5 & m_r = 100</div>
+            <video controls>
+                <source src="Ma05mr100.webm"  type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-panel">
+            <div class="video-title">M_A = 5 & m_r = 1836</div>
+            <video controls>
+                <source src="Ma05mr1836.webm"  type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-panel">
+            <div class="video-title">M_A = 21 & m_r = 100</div>
+            <video controls>
+                <source src="Ma21mr100.webm"  type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-panel">
+            <div class="video-title">M_A = 21 & m_r = 1836</div>
+            <video controls>
+                <source src="Ma21mr1836.webm"  type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</body>
+</html>
+
