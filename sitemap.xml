@@ -43,4 +43,10 @@
         <priority>1.0</priority>
     </url>
 
+    <url>
+        <loc>https://mohamadshalaby.github.io/Pshock_mr.html</loc>
+        <lastmod>2024-11-10T10:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
