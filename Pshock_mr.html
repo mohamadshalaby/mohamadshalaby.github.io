@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallel shocks: impact of ion-to-electrons mass ratio</title>
+    <title>Parallel Shocks: Impact of Ion-to-Electron Mass Ratio</title>
     <style>
         body {
             display: flex;
@@ -12,24 +12,26 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+            padding: 20px;
         }
         .intro-text {
             text-align: center;
             font-size: 18px;
-            margin: 20px 0;
+            margin: 20px 0 40px 0;
             color: #333;
             max-width: 800px;
-        }      
+            line-height: 1.6;
+        }
         .container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
+            gap: 20px;
             width: 80%;
             max-width: 800px;
         }
         .video-panel {
             background-color: #333;
-            padding: 10px;
+            padding: 15px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             color: #fff;
@@ -37,7 +39,7 @@
         .video-title {
             text-align: center;
             font-size: 16px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
         video {
             width: 100%;
@@ -47,42 +49,39 @@
     </style>
 </head>
 <body>
-
     <div class="intro-text">
-		<strong> Particle-in-Cell (PIC) Simulation for Parallel Shocks Using the SHARP Code </strong> <br> <br>
-
-		In this study, we investigate the effects of using a reduced ion-to-electron mass ratio on shock evolution in 1D3V PIC simulations.
+        <strong>Particle-in-Cell (PIC) Simulation for Parallel Shocks Using the SHARP Code</strong><br><br>
+        In this study, we investigate the effects of using a reduced ion-to-electron mass ratio on shock evolution in 1D3V PIC simulations.
     </div>			
     <div class="container">
         <div class="video-panel">
-            <div class="video-title">M_A = 5.3 & m_r = 100</div>
+            <div class="video-title">M<sub>A</sub> = 5.3 & m<sub>r</sub> = 100</div>
             <video controls>
-                <source src="Ma05mr100.webm"  type="video/webm">
+                <source src="Ma05mr100.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="video-panel">
-            <div class="video-title">M_A = 5.3 & m_r = 1836</div>
+            <div class="video-title">M<sub>A</sub> = 5.3 & m<sub>r</sub> = 1836</div>
             <video controls>
-                <source src="Ma05mr1836.webm"  type="video/webm">
+                <source src="Ma05mr1836.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="video-panel">
-            <div class="video-title">M_A = 21.3 & m_r = 100</div>
+            <div class="video-title">M<sub>A</sub> = 21.3 & m<sub>r</sub> = 100</div>
             <video controls>
-                <source src="Ma21mr100.webm"  type="video/webm">
+                <source src="Ma21mr100.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="video-panel">
-            <div class="video-title">M_A = 21.3 & m_r = 1836</div>
+            <div class="video-title">M<sub>A</sub> = 21.3 & m<sub>r</sub> = 1836</div>
             <video controls>
-                <source src="Ma21mr1836.webm"  type="video/webm">
+                <source src="Ma21mr1836.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
         </div>
     </div>
 </body>
 </html>
-
