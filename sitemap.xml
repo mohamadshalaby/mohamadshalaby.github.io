@@ -23,6 +23,13 @@
     </url>
 
     <url>
+        <loc>https://mohamadshalaby.github.io/research.html</loc>
+        <lastmod>2023-11-14T10:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
         <loc>https://mohamadshalaby.github.io/teaching.html</loc>
         <lastmod>2023-11-14T10:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -33,6 +40,13 @@
     <url>
         <loc>https://mohamadshalaby.github.io/Pshock_mr.html</loc>
         <lastmod>2024-11-10T10:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://mohamadshalaby.github.io/Pshock_Sig01.html</loc>
+        <lastmod>2025-07-10T10:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
