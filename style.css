@@ -274,7 +274,7 @@
 	flex-shrink: 0;
     display: block;
 	background-color: #6c757d; /* Gray background */    
-	width: 35%;
+	width: 25%;
 	padding-left: 0px; /* Add some spacing between the text and image */
 	padding-top: 00px; /* Add some spacing between the text and image */
 }
