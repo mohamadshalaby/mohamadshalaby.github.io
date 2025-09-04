@@ -14,63 +14,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallel Shocks: Impact of Ion-to-Electron Mass Ratio</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-        .intro-text {
-            text-align: center;
-            font-size: 18px;
-            margin: 20px 0 40px 0;
-            color: #333;
-            max-width: 800px;
-            line-height: 1.6;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            width: 80%;
-            max-width: 800px;
-        }
-        .video-panel {
-            background-color: #333;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            color: #fff;
-        }
-        .video-title {
-            text-align: center;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        video {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-    </style>
-</head>
+
+    <link rel="stylesheet" href="style.css">
+    
+  <!-- MathJax script -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
 <body>
-    <div class="intro-text">
-        <strong>Particle-in-Cell (PIC) Simulation for Strong Parallel Shocks Using the SHARP Code</strong><br><br>
-        In this study, we investigate the effects of using a reduced ion-to-electron mass ratio on the evolution of parallel weakly magnetized electron-ion strong shocks in 1D3V PIC simulations.
 
-		<p> </p>
+    <header>
+        <div class="container">
+            <h1>Mohamad Shalaby</h1>
+            <p>Plasma Astrophysicist | HAPI Research Associate</p>
+        </div>
+    </header>
+        
+</head>
 
-		These simulations published as an ApJ letter: "Energy Dissipation in Strong Collisionless Shocks: The Crucial Role of Ion-to-electron Scale Separation in Particle-in-cell Simulations" 
-		<a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad99d8/meta" target="_blank" class="white">  Shalaby 2024 ApJL 977 L43 </a>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <div class="container">
+        <div class="hero">
+			<strong>Particle-in-Cell (PIC) Simulation for Strong Parallel Shocks Using the SHARP Code</strong><br><br>
+			In this study, we investigate the effects of using a reduced ion-to-electron mass ratio on the evolution of parallel weakly magnetized electron-ion strong shocks in 1D3V PIC simulations.
+
+			<p> </p>
+
+			These simulations published as an ApJ letter: "Energy Dissipation in Strong Collisionless Shocks: The Crucial Role of Ion-to-electron Scale Separation in Particle-in-cell Simulations" 
+			<a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad99d8/meta" target="_blank" class="btn">  Shalaby 2024 ApJL 977 L43 </a>
+        </div>
+    </div>
+           	
+ 
+    <div class="hero-container">
     </div>
     
 
-    <div class="container">
+    <div class="video-container2">
         <div class="video-panel">
             <div class="video-title">M<sub>A</sub> = 5.3 & m<sub>r</sub> = 100</div>
             <video controls>

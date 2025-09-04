@@ -1,7 +1,4 @@
 
-/*
-    <style>
-*/
         * {
             margin: 0;
             padding: 0;
@@ -227,7 +224,7 @@
         }
         
         
-/*
+
         footer {
 		background-image: url('images/banner2.png'); /* Set background image */
 		background-size: cover; /* Ensure the image covers the header */
@@ -239,7 +236,7 @@
 		bottom: 0;
 		width: 100%;
     }
-*/
+
 
         @media (max-width: 768px) {
             .hero h1 {
@@ -444,3 +441,42 @@
 .btn:hover {
     background-color: #2980b9;
 }
+
+
+
+.video-container2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	max-width: 65%;
+	margin: 0 auto;
+	padding: 20px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+
+    height: 0;
+    border-radius: 6px;
+    	
+} 
+
+.video-panel {
+	background: black;
+	border-radius: 8px;
+	padding: 15px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.video-title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+	color: white;
+}
+
+video {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+   position: relative;

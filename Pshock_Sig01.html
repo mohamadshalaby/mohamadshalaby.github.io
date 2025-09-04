@@ -14,65 +14,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Influence of Magnetization on Parallel Collisionless Shocks</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-        .intro-text {
-            text-align: center;
-            font-size: 18px;
-            margin: 20px 0 40px 0;
-            color: #333;
-            max-width: 800px;
-            line-height: 1.6;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            width: 80%;
-            max-width: 800px;
-        }
-        .video-panel {
-            background-color: #333;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            color: #fff;
-        }
-        .video-title {
-            text-align: center;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        video {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="style.css">
+    
+  <!-- MathJax script -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
 </head>
+
 <body>
-    <div class="intro-text">
-        <strong>Particle-in-Cell (PIC) Simulation for Weakly to strongly magnetized Strong Parallel Shocks Using the SHARP Code</strong><br><br>
-        In this study, we investigate the effects of increasing the background magnetic field (i.e., from weakly to strongly magnetized cases) on the evolution of parallel magnetized electron-ion strong shocks (with realistic ion-to-electron mass ratio <i>m</i><sub><i>i</i></sub>/<i>m</i><sub><i>e</i></sub> =1836) in 1D3V PIC simulations.
 
-		<p> </p>
+    <header>
+        <div class="container">
+            <h1>Mohamad Shalaby</h1>
+            <p>Plasma Astrophysicist | HAPI Research Associate</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-		The simulations are published in "Parallel Collisionless Shocks in strongly Magnetized Electron-Ion Plasma. I. Temperature anisotropies"
-		<a href="https://arxiv.org/abs/2503.10758" target="_blank" class="white">  Shalaby et. al. 2025 arxiv:2503.10758 </a>
+   <div class="container">
+        <div class="hero">
+			<strong>Particle-in-Cell (PIC) Simulation for Weakly to strongly magnetized Strong Parallel Shocks Using the SHARP Code</strong><br><br>
+			In this study, we investigate the effects of increasing the background magnetic field (i.e., from weakly to strongly magnetized cases) on the evolution of parallel magnetized electron-ion strong shocks (with realistic ion-to-electron mass ratio <i>m</i><sub><i>i</i></sub>/<i>m</i><sub><i>e</i></sub> =1836) in 1D3V PIC simulations.
+
+			<p> </p>
+
+			The simulations are published in "Parallel Collisionless Shocks in strongly Magnetized Electron-Ion Plasma. I. Temperature anisotropies"
+			<a href="https://arxiv.org/abs/2503.10758" target="_blank" class="btn">  Shalaby et. al. 2025 arxiv:2503.10758 </a>
+        </div>
     </div>
-    
-    
+           	
+ 
 
 
-    <div class="container">
+    <div class="video-container2">
+        
         <div class="video-panel">
             <div class="video-title">&sigma;<sub><i>i</i></sub><sup>'</sup> = 0.06 &longrightarrow; &sigma;<sub><i>i</i></sub> &approx; 0.04</div>
             <video controls>
@@ -80,6 +69,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+        
         <div class="video-panel">
             <div class="video-title">&sigma;<sub><i>i</i></sub><sup>'</sup> = 0.1 &longrightarrow; &sigma;<sub><i>i</i></sub> &approx; 0.07</div>
             <video controls>
@@ -87,6 +77,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+        
         <div class="video-panel">
             <div class="video-title">&sigma;<sub><i>i</i></sub><sup>'</sup> = 1.0 &longrightarrow; &sigma;<sub><i>i</i></sub> &approx; 0.51</div>
             <video controls>
@@ -94,6 +85,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+        
         <div class="video-panel">
             <div class="video-title">&sigma;<sub><i>i</i></sub><sup>'</sup> = 1.5 &longrightarrow; &sigma;<sub><i>i</i></sub> &approx; 0.73</div>
             <video controls>
@@ -101,6 +93,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+        
         <div class="video-panel">
             <div class="video-title">&sigma;<sub><i>i</i></sub><sup>'</sup> = 4 &longrightarrow; &sigma;<sub><i>i</i></sub> &approx; 1.0 </div>
             <video controls>
@@ -108,6 +101,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+        
         <div class="video-panel">
             <div class="video-title">&sigma;<sub><i>i</i></sub><sup>'</sup> = 10 &longrightarrow; &sigma;<sub><i>i</i></sub> &approx; 2.51</div>
             <video controls>
@@ -115,6 +109,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+    
     </div>
 </body>
 </html>
