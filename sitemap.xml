@@ -50,4 +50,12 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <url>
+        <loc>https://mohamadshalaby.github.io/DPDM.html</loc>
+        <lastmod>2025-07-10T10:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
 </urlset>
