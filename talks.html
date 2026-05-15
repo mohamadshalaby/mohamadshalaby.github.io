@@ -2,56 +2,82 @@
 <html lang="en">
 
 <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7MGHDQDS1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-X7MGHDQDS1');
-	</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7MGHDQDS1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X7MGHDQDS1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talks | Mohamad Shalaby</title>
     <link rel="stylesheet" href="style.css">
 
-	<script type="text/x-mathjax-config">
-	  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-	</script>
-	<script type="text/javascript"
-	  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 
-
-<!--
-
-<script>
-    function toggleTab(tabId, element) {
-        var tabContent = document.getElementById(tabId);
-        var isActive = tabContent.style.display === 'block';
-
-        // Hide all tab contents
-        var tabContents = document.querySelectorAll('.tab-content');
-        tabContents.forEach(function(content) {
-            content.style.display = 'none';
-        });
-
-        // Remove active class from all tabs
-        var tabs = document.querySelectorAll('.tab');
-        tabs.forEach(function(tab) {
-            tab.classList.remove('active-tab');
-        });
-
-        // If the clicked tab was not active, show the tab content
-        if (!isActive) {
-            tabContent.style.display = 'block';
-            element.classList.add('active-tab');
+    <style>
+        /* Two‑column layout inside the container */
+        .talks-layout {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-top: 1rem;
         }
-    }
-</script>
--->
-
+        /* Sticky sidebar – inside the container's flow */
+        .talks-sidebar {
+            width: 150px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 0.2rem;
+            border: 1px solid #ddd;
+            font-size: 0.9rem;
+        }
+        .talks-sidebar a {
+            display: block;
+            color: #0077cc;
+            text-decoration: none;
+            padding: 6px 8px;
+            margin: 1px 0;
+            border-radius: 1px;
+            transition: background 0.2s;
+        }
+        .talks-sidebar a:hover {
+            background: #e0e0e0;
+        }
+        .talks-main {
+            flex: 1;
+            min-width: 0; /* prevent overflow */
+        }
+        /* On smaller screens, stack columns */
+        @media (max-width: 800px) {
+            .talks-layout {
+                flex-direction: column;
+            }
+            .talks-sidebar {
+                width: 100%;
+                position: static;
+                margin-bottom: 1rem;
+            }
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Preserve original spacing for the sections */
+        .content-section {
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -75,135 +101,140 @@
         </div>
     </nav>
 
-	<p> <br></p>
-	<p> <br></p>
+    <div class="container">
+        <!-- Two‑column layout inside the same container -->
+        <div class="talks-layout">
+            <!-- Sidebar -->
+            <aside class="talks-sidebar">
+                <strong>Talks</strong>
+                <a href="#invited-talks"> Invited Talks</a>
+                <a href="#contributed-talks"> Contributed Talks</a>
+            </aside>
 
-   <div class="container">
+            <!-- Main content -->
+            <main class="talks-main">
+                <!-- Invited Talks section -->
+                <section class="content-section" id="invited-talks">
+                    <div class="teaching-card">
+                        <h2>Selected Invited Talks</h2>
+                        <ul reversed>
+                            <li> <b>22.11.2024</b> <i> PI Cosmic Void Day, Perimeter institute for theoretical physics </i> 
+                                    <br> Talk: Constraints on the intergalactic magnetic field                    
+                                <a href="https://drive.google.com/file/d/1hi0m2iyB7fowZzDR_RJb_wAd84zavsOA/view?usp=sharing"  target="_blank" class="black">  Slides </a>  
+                            </li>
+                            <li> <b>30.10.2024</b> <i> Astroseminar @ Waterloo center for Astrophysics (WCA) </i> 
+                                    <br> Talk: Frontiers in Cosmic Ray Puzzles and Why They Matter  <a href="https://drive.google.com/file/d/19o7MQyAdQi3rkhXm9N_iI5FvirLpiRyD/view?usp=sharing"  target="_blank" class="black">  Slides </a>  
+                            </li>
+                            <li> <b>18.07.2024</b> <i> JPP Frontiers of Plasma Physics Colloquium </i> 
+                                    <br> Talk: Cosmic-Ray Choreography: Ion-Driven Instabilities in Astrophysical Plasmas  <a href="https://drive.google.com/file/d/1GqerNbNkkWPcrAtRmI7ZOhnzQo38ou2E/view?usp=sharing"  target="_blank" class="black">  Slides </a> &    <a href="https://cassyni.com/events/Dnb7hrRFRbH5gkerfZPNFo"  target="_blank" class="black"> Video recording @ JPP website </a>  
+                            </li>
+                            <li> <b>26.10.2023</b> <i>Strong Gravity Seminar, Perimeter Institute for Theoretical Physics</i> Waterloo, Canada<br> <i>Talk: Unveiling a Novel Plasma Instability: Impacts on Galaxy Formation and Electron Acceleration at Shocks</i>
+                                <p>
+                                <center>  <div class="btn" onclick="toggleTab('videoTab2', this)"> Show video recording </div> </center>
+                                <div id="videoTab2" class="tab-content"> 
+                                    <center> <iframe width="60%" height="300" data-src="https://streamer2.perimeterinstitute.ca/mp4-med/23100116.mp4" title="pirsa.org 23100116" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
+                                </div>
+                                </p>
+                            </li>
+                            <li> <b>03.10.2023</b> <i>Astro-plasma group meeting, CITA</i> Toronto, Canada<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic electron-ion shocks</i>
+                            </li>
+                            <li> <b>23.08.2023</b> <i>Cosmology & High-Energy Astrophysics Section, 2023 group retreat </i>Potsdam, Germany<br> <i>Talk: Plasma Astrophysics Efforts at Our Section</i>
+                            </li>
+                            <li> <b>24.11.2022</b> <i>Potsdam Workshop on Particle Acceleration and Transport, AIP </i>Potsdam, Germany<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
+                            </li>
+                            <li> <b>18.10.2022</b> <i>Workshop on Cosmic ray transport and magnetic fields in the ISM and the CGM, Ruhr-Universtitat </i>Bochum, Germany<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
+                            </li>
+                            <li> <b>21.09.2022</b> <i>Astro Seminar, Waterloo Center for Astrophysics </i>Waterloo, Canada<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
+                                <p>    
+                                <center>  <div class="btn" onclick="toggleTab('videoTab1', this)">Show video recording</div> </center>
+                                <div id="videoTab1" class="tab-content"> 
+                                    <center> <iframe width="60%" height="300" data-src="https://www.youtube.com/embed/BQcDROftzpE?si=UQY7KPE_VpUc62W2" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
+                                </div>
+                                </p>
+                            </li>
+                            <li> <b>20.04.2022</b> <i>Workshop on Jet Composition and Radiative Processes, Virtual </i> <br> <i>Talk: Kinetic vs Fluid modeling for the evolution of Astrophysical plasma</i>
+                            </li>
+                            <li> <b>24.03.2022</b> <i>56th Moriond conference on Very High Energy Phenomena in the Universe, </i>La Thuile, Italy<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
+                            </li>
+                            <li> <b>09.04.2021</b> <i>Seminar at the Center for Computational Astrophysics, New York City, USA, </i> Virtual visit<br> <i>Talk: A new Cosmic-ray driven instability </i>
+                            </li>
+                            <li> <b>19.02.2021</b> <i>DESY Astroparticle seminar, Berlin, Germany, </i>Virtual<br> <i>Talk: Cosmic ray dynamical impacts at stellar environments </i>
+                            </li>
+                            <li> <b>18.11.2020</b> <i>Impacts and Signatures of Blazars-driven Beam-plasma instabilities Workshop, </i>Virtual<br> <i>Talk: Plasma physics of TeV-Blazars </i>
+                            </li>
+                            <li> <b>22.01.2020</b> <i>Max Planck Princeton Center Workshop, </i>Göttingen, Germany<br> <i>Talk: Particle-in-cell simulations of Astrophysical plasma: Importance of convergence studies </i>
+                            </li>
+                            <li> <b>25.11.2019</b> <i>Potsdam-DESY joint meeting, </i>AIP, Potsdam<br> <i>Talk: TeV-blazars -- GeV halos and the IGMF constraints </i>
+                            </li>
+                            <li> <b>14.11.2019</b> <i>Colloquium,Leibniz Institute for Astrophysics </i>AIP, Potsdam<br> <i>Talk: Magnetic Fields in the Intergalactic Medium </i>
+                            </li>
+                            <li> <b>02.10.2019</b> <i>Workshop on plasma simulations and particle acceleration,Institute of Physics and Astronomy </i>University of Potsdam, Germany<br> <i>Talk: On modeling the evolution of Astrophysical plasmas: Fluid vs Kinetic models </i>
+                            </li>
+                            <li> <b>03.09.2019</b> <i>KITP Program: Multiscale Phenomena in Plasma Astrophysics, </i>Virtual<br> <i>Talk: PIC and PIC related algorithms </i>
+                            </li>
+                            <li> <b>20.09.2018</b> <i>Monitoring the Non-Thermal Universe Conference, </i>Cochem, Germany<br> <i>Talk: Blazars-driven beam plasma instabilities in the Intergalactic Medium </i>
+                            </li>
+                            <li> <b>15.03.2016</b> <i>Workshop: Feedback over 44 Orders of Magnitude: From Gamma-rays to the Universe, Perimeter Institute for Theoretical Physics </i>Waterloo, Canada<br> <i>Talk: Beam plasma simulations in the non-linear regime</i>
+                            </li>
+                        </ul>   
+                    </div>
+                </section>
 
+                <!-- Contributed Talks section -->
+                <section class="content-section" id="contributed-talks">
+                    <div class="teaching-card">
+                        <h2>Selected Contributed Talks</h2>
+                        <ul reversed>
+							<li> <b>27.04.2026</b> <i> Cosmological Frontiers in Fundamental Physics 2026, Perimeter institute, waterloo </i> 
+								<br> Talk: The Sound of the Universe: A Resonant Gravitational Instability Driven by Baryon-Dark Matter Relative Drift
+								<a href="https://drive.google.com/file/d/14Ner1vsD9xwxryOpKAwpMOlICP9JkVJX/view?usp=sharing"  target="_blank" class="black">  Slides </a>  
+                                <p>    
+                                    <center>  <div class="btn" onclick="toggleTab('videoTab4', this)">Show video recording</div> </center>
+                                    <div id="videoTab4" class="tab-content"> 
+                                        <center> <iframe width="60%" height="300" data-src="https://streamer2.perimeterinstitute.ca/mp4-med/26040114.mp4" title="PIRSA reconding" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
+                                    </div>
+                                </p>
+							</li>
+                           <li> <b>15.09.2023</b> <i>Exploring the Causes and Consequences of Solar Flares, CMEs, and other Transient Splinter, Annual Meeting of the Astronomische Gesellschaft 2023, </i>Berlin, Germany<br> <i>Talk: A new Cosmic-ray driven instability</i>
+                            </li>
+                            <li> <b>14.09.2023</b> <i>Physics of compact objects: From observations to theoretical investigations Splinter, Annual Meeting of the Astronomische Gesellschaft 2023, </i>Berlin, Germany<br> <i>Talk: Towards a Physical Understanding of Plasma Dynamics in the Vicinity of Compact Objects</i>
+                            </li>
+                            <li> <b>12.09.2023</b> <i>Supernova remnants and the hot interstellar medium Splinter, Annual Meeting of the Astronomische Gesellschaft 2023, </i>Berlin, Germany<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic electron-ion shocks</i>
+                            </li>
+                            <li> <b>03.07.2023</b> <i>49th European Conference on Plasma Physics (EPS 2023), </i>Bordeaux, France<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic electron-ion shocks</i>
+                            </li>
+                            <li> <b>10.08.2022</b> <i>TeVPA 2022, Queen's University </i>Kingston, Canada<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
+                            </li>
+                            <li> <b>26.07.2022</b> <i>27th European Cosmic Ray Symposium (ECRS) 2022, </i>Nijmegen, The Netherlands<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
+                            </li>
+                            <li> <b>15.07.2021</b> <i>37th International Cosmic Ray Conference, </i>Virtual<br>  <a href="https://video.desy.de/video/A-New-Cosmic2DRay2Ddriven-Instability/eab67d8307db0d0101cb8c15f762cb09"  target="_blank" class="black"> <i>Talk: A New Cosmic-Ray-driven Instability</i> </a>
+                                <p>    
+                                    <center>  <div class="btn" onclick="toggleTab('videoTab3', this)">Show video recording</div> </center>
+                                    <div id="videoTab3" class="tab-content"> 
+                                        <center> <iframe width="60%" height="300" data-src="https://video.desy.de/getMedium/eab67d8307db0d0101cb8c15f762cb09.mp4" title="ICRC reconding" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
+                                    </div>
+                                </p>
+                            </li>
+                            <li> <b>24.02.2021</b> <i>Science at the Horizon: the Next-Generation EHT, </i>Virtual<br> <i>Talk: Plasma physics at the horizon-scale: emission and dynamics</i>
+                            </li>
+                            <li> <b>24.09.2020</b> <i>Cosmic Magnetic Fields Splinter, German Astronomical society meeting, </i>Virtual<br> <i>Talk: Magnetic Fields in the intergalactic medium</i>
+                            </li>
+                            <li> <b>12.07.2019</b> <i>46th European Physical Society Conference on Plasma Physics (EPS 2019), </i>Milan, Italy<br> <i>Talk: PIC Simulations for tenuous inhomogeneous Beam-Plasma system</i>
+                            </li>
+                            <li> <b>17.10.2018</b> <i>Cosmology and Astrophysics Seminar,Leibniz Institute for Astrophysics </i>AIP, Potsdam<br> <i>Talk: Particle-in-cell simulations: the Good, the Bad, and the Ugly</i>
+                            </li>
+                            <li> <b>04.06.2018</b> <i>19th International Congress on Plasma Physics, </i>Vancouver, Canada<br> <i>Talk: Accessing the Nonlinear Physics of Astrophysical Plasmas -- Convergence of PIC Simulations --</i>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div> <!-- end talks-layout -->
+    </div> <!-- end container -->
 
-	<section class="content-section">
-<!--
-   		<h1>Selected Invited Talks: </h1>
--->
-      <div class="teaching-card">
-          <h2>Selected Invited Talks</h2>
-                
-			<ul reversed>
-			<li> <b>22.11.2024</b> <i> PI Cosmic Void Day, Perimeter institute for theoretical physics </i> </b> 
-					<br> Talk: Constraints on the intergalactic magnetic field 					
-				<a href="https://drive.google.com/file/d/1hi0m2iyB7fowZzDR_RJb_wAd84zavsOA/view?usp=sharing"  target="_blank" class="black">  Slides </a>  
-
-			</i>
-				<p>
-<!--					<center> <iframe width=60% height="300" src="https://streamer2.perimeterinstitute.ca/mp4-med/23100116.mp4" title="pirsa.org 23100116" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
--->
-				</p>
-			<li> <b>30.10.2024</b> <i> Astroseminar @ Waterloo center for Astrophysics (WCA) </i> </b> 
-					<br> Talk: Frontiers in Cosmic Ray Puzzles and Why They Matter  <a href="https://drive.google.com/file/d/19o7MQyAdQi3rkhXm9N_iI5FvirLpiRyD/view?usp=sharing"  target="_blank" class="black">  Slides </a>  </i>
-				<p>
-<!--					<center> <iframe width=60% height="300" src="https://streamer2.perimeterinstitute.ca/mp4-med/23100116.mp4" title="pirsa.org 23100116" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
--->
-				</p>
-				
-			<li> <b>18.07.2024</b> <i> JPP Frontiers of Plasma Physics Colloquium </i> </b> 
-					<br> Talk: Cosmic-Ray Choreography: Ion-Driven Instabilities in Astrophysical Plasmas  <a href="https://drive.google.com/file/d/1GqerNbNkkWPcrAtRmI7ZOhnzQo38ou2E/view?usp=sharing"  target="_blank" class="black">  Slides </a> &    <a href="https://cassyni.com/events/Dnb7hrRFRbH5gkerfZPNFo"  target="_blank" class="black"> Video reconding @ JPP website </a>  </i>
-					
-
-<!--
-				<p>
-				<center>  <div class="btn" onclick="toggleTab('videoTab4', this)"> Show video recording </div> </center>
-				<div id="videoTab4" class="tab-content"> 
-						<center> <iframe width=60% height="300" src="https://s3.us-east-1.amazonaws.com/cassyni-user-files-prod/71HeELCELFuJU3aoKjSef8?AWSAccessKeyId=ASIAWOXT65EJKU7LOV7U&Signature=zjrGkxuthl7IKowoEh0xJBggyjQ%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEC8aCXVzLWVhc3QtMSJIMEYCIQCjmm6usNoVBZ9hWgHVDkhpaPEsS0%2BiFN5V3QNQdbib%2BgIhAIQkJRZOPs6a59ieB1gyMuUsn%2BQGqOWAznOEIBYBPMRqKogECKf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQAxoMNDQzOTY3MDA2OTk0Igx%2FaXHwbxQ7R%2BW0AY0q3ANdJn9vavXWaqbzlt08xadoMd0dfJzEve16NdV0k5a%2FdBkDvteT0PUYYqVJ1TddjUw8asHz6SXHIkiVEN5ee1ILwlaw5%2FhIY3CllcbeaEVyXyoZtksjm7JPCmHX4l1qz5nQxVcmBHGUqNbDGThB0%2F00gQCQv6Qhgk00yl%2BtCK6Z1Lz2aXB0X5IQ6lfWvU41pY3uVvsxFEKlU8QrR2H2g3sw1ETyhsxw4wQYfUQLFhIAqb2MMQD9ZFUJtDRBoxgItWRUI3GBFWMnbgYEzWYVWQ7B5MeTJxQLLLj3zlofPhzTimUdHCrEeiEFbkvyRTsRYXudsfuireKD%2F%2F%2F9I0Ii8tOsgi%2B4yhPKTsAiucxrAcceNgAqSl7c2i6LDYsKKr92%2BX8OKapxM4q35fthSKjS3MLs0CUwzzr%2BVHcsWpSGczAFE5%2FSziAfGzXXtGVZHcdjC%2Bh%2BNNlTl2rqQ8hZenBKS%2FaBLwvA4DC3z%2BFj7YfRiDStWUnGvzzUhBuNIM8XAKpGmNPoaef%2FICn6UdPTeocc5b7QQTitTsEHb4b%2B61CgFL642%2FcrnUg%2BeYasVUS81069kXCBKBAo3H9IJQxCndoTqLxqovUZvTZD9Dv9UEq%2FVIy9xw6W36uf1HWrAqu%2FEDDEhKvGBjqkAftQz7db0T8L1DxovFoFb6wCz7TtdSGbr6nnpIJ9wx3oEdjmev3sw6uJVgxwIbok2y3%2BZa46kJzIeDk%2FJgEIZYEWrUGyYDHodMrIQaeBgLdF%2BdF8JG9u6OUonivOdhVeGQqnkQhtgrGJwwcS%2BcjDGpkjtkQQodkLLAF35KVb1hnAOsWCU2QEOkM6orgG8toQjl0JwGOuTFPPe2vaVgXOtYMw2nQn&Expires=1758209501" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
-				</div>
-				</p>
--->
-
-				
-			<li> <b>26.10.2023</b> <i>Strong Gravity Seminar, Perimeter Institute for Theoretical Physics</i> Waterloo, Canada<br> <i>Talk: Unveiling a Novel Plasma Instability: Impacts on Galaxy Formation and Electron Acceleration at Shocks</i>
-
-
-				<p>
-				<center>  <div class="btn" onclick="toggleTab('videoTab2', this)"> Show video recording </div> </center>
-				<div id="videoTab2" class="tab-content"> 
-						<center> <iframe width=60% height="300" src="https://streamer2.perimeterinstitute.ca/mp4-med/23100116.mp4" title="pirsa.org 23100116" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
-				</div>
-				</p>
-
-
-			<li> <b>03.10.2023</b> <i>Astro-plasma group meeting, CITA</i> Toronto, Canada<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic electron-ion shocks</i>
-			<li> <b>23.08.2023</b> <i>Cosmology & High-Energy Astrophysics Section, 2023 group retreat </i>Potsdam, Germany<br> <i>Talk: Plasma Astrophysics Efforts at Our Section</i>
-			<li> <b>24.11.2022</b> <i>Potsdam Workshop on Particle Acceleration and Transport, AIP </i>Potsdam, Germany<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
-			<li> <b>18.10.2022</b> <i>Workshop on Cosmic ray transport and magnetic fields in the ISM and the CGM, Ruhr-Universtitat </i>Bochum, Germany<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
-			<li> <b>21.09.2022</b> <i>Astro Seminar, Waterloo Center for Astrophysics </i>Waterloo, Canada<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
-				<p>	
-				<center>  <div class="btn" onclick="toggleTab('videoTab1', this)">Show video recording</div> </center>
-				<div id="videoTab1" class="tab-content"> 
-					<center> <iframe width=60% height="300" src="https://www.youtube.com/embed/BQcDROftzpE?si=UQY7KPE_VpUc62W2" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
-				</div>
-
-				</p>
-			<li> <b>20.04.2022</b> <i>Workshop on Jet Composition and Radiative Processes, Virual </i> <br> <i>Talk: Kinetic vs Fluid modeling for the evolution of Astrophysical plasma</i>
-			<li> <b>24.03.2022</b> <i>56th Moriond conference on Very High Energy Phenomena in the Universe, </i>La Thuile, Italy<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
-			<li> <b>09.04.2021</b> <i>Seminar at the Center for Computational Astrophysics, New York City, USA, </i> Virtual visit<br> <i>Talk: A new Cosmic-ray driven instability </i>
-			<li> <b>19.02.2021</b> <i>DESY Astroparticle seminar, Berlin, Germany, </i>Virtual<br> <i>Talk: Cosmic ray dynamical impacts at stellar environments </i>
-			<li> <b>18.11.2020</b> <i>Impacts and Signatures of Blazars-driven Beam-plasma instabilities Workshop, </i>Virtual<br> <i>Talk: Plasma physics of TeV-Blazars </i>
-			<li> <b>22.01.2020</b> <i>Max Planck Princeton Center Workshop, </i>Göttingen, Germany<br> <i>Talk: Particle-in-cell simulations of Astrophysical plasma: Importance of convergence studies </i>
-			<li> <b>25.11.2019</b> <i>Potsdam-DESY joint meeting, </i>AIP, Potsdam<br> <i>Talk: TeV-blazars -- GeV halos and the IGMF constraints </i>
-			<li> <b>14.11.2019</b> <i>Colloquium,Leibniz Institute for Astrophysics </i>AIP, Potsdam<br> <i>Talk: Magnetic Fields in the Intergalactic Medium </i>
-			<li> <b>02.10.2019</b> <i>Workshop on plasma simulations and particle acceleration,Institute of Physics and Astronomy </i>University of Potsdam, Germany<br> <i>Talk: On modeling the evolution of Astrophysical plasmas: Fluid vs Kinetic models </i>
-			<li> <b>03.09.2019</b> <i>KITP Program: Multiscale Phenomena in Plasma Astrophysics, </i>Virtual<br> <i>Talk: PIC and PIC related algorithms </i>
-			<li> <b>20.09.2018</b> <i>Monitoring the Non-Thermal Universe Conference, </i>Cochem, Germany<br> <i>Talk: Blazars-driven beam plasma instabilities in the Intergalactic Medium </i>
-			<li> <b>15.03.2016</b> <i>Workshop: Feedback over 44 Orders of Magnitude: From Gamma-rays to the Universe, Perimeter Institute for Theoretical Physics </i>Waterloo, Canada<br> <i>Talk: Beam plasma simulations in the non-linear regime</i>
-				<center></center>
-
-		</ul>   
-
-	</div>
-	</section>
-        
-	<section class="content-section">
-
-<!--
-		<h1>Selected Contributed Talks</h1>
--->
-       <div class="teaching-card">
-       <h2>Selected Contributed Talks</h2>
-                
-		<ul reversed>
-			<li> <b>15.09.2023</b> <i>Exploring the Causes and Consequences of Solar Flares, CMEs, and other Transient Splinter, Annual Meeting of the Astronomische Gesellschaft 2023, </i>Berlin, Germany<br> <i>Talk: A new Cosmic-ray driven instability</i>
-			<li> <b>14.09.2023</b> <i>Physics of compact objects: From observations to theoretical investigations Splinter, Annual Meeting of the Astronomische Gesellschaft 2023, </i>Berlin, Germany<br> <i>Talk: Towards a Physical Understanding of Plasma Dynamics in the Vicinity of Compact Objects</i>
-			<li> <b>12.09.2023</b> <i>Supernova remnants and the hot interstellar medium Splinter, Annual Meeting of the Astronomische Gesellschaft 2023, </i>Berlin, Germany<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic electron-ion shocks</i>
-			<li> <b>03.07.2023</b> <i>49th European Conference on Plasma Physics (EPS 2023), </i>Bordeaux, France<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic electron-ion shocks</i>
-			<li> <b>10.08.2022</b> <i>TeVPA 2022, Queen's University </i>Kingston, Canada<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
-			<li> <b>26.07.2022</b> <i>27th European Cosmic Ray Symposium (ECRS) 2022, </i>Nijmegen, The Netherlands<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
-			<li> <b>15.07.2021</b> <i>37th International Cosmic Ray Conference, </i>Virtual<br>  <a href="https://video.desy.de/video/A-New-Cosmic2DRay2Ddriven-Instability/eab67d8307db0d0101cb8c15f762cb09"  target="_blank" class="black"> <i>Talk: A New Cosmic-Ray-driven Instability</i> </a>
-				<p>	
-					<center>  <div class="btn" onclick="toggleTab('videoTab3', this)">Show video recording</div> </center>
-					<div id="videoTab3" class="tab-content"> 
-						<center> <iframe width=60% height="300" src="https://video.desy.de/getMedium/eab67d8307db0d0101cb8c15f762cb09.mp4" title="ICRC reconding" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
-					</div>
-				</p>
-						
-			<li> <b>24.02.2021</b> <i>Science at the Horizon: the Next-Generation EHT, </i>Virtual<br> <i>Talk: Plasma physics at the horizon-scale: emission and dynamics</i>
-			<li> <b>24.09.2020</b> <i>Cosmic Magnetic Fields Splinter, German Astronomical society meeting, </i>Virtual<br> <i>Talk: Magnetic Fields in the intergalactic medium</i>
-			<li> <b>12.07.2019</b> <i>46th European Physical Society Conference on Plasma Physics (EPS 2019), </i>Milan, Italy<br> <i>Talk: PIC Simulations for tenuous inhomogeneous Beam-Plasma system</i>
-			<li> <b>17.10.2018</b> <i>Cosmology and Astrophysics Seminar,Leibniz Institute for Astrophysics </i>AIP, Potsdam<br> <i>Talk: Particle-in-cell simulations: the Good, the Bad, and the Ugly</i>
-			<li> <b>04.06.2018</b> <i>19th International Congress on Plasma Physics, </i>Vancouver, Canada<br> <i>Talk: Accessing the Nonlinear Physics of Astrophysical Plasmas -- Convergence of PIC Simulations --</i>
-			
-
-
-    </div>
-    </section>
-
-
-
-    </div>
-    
-    
     <footer>
         <p>&copy; 2024 Mohamad Shalaby <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8204;</span></p>
     </footer>
-
 
     <script>
         function toggleTab(id, element) {
@@ -218,54 +249,39 @@
         }
     </script>
     
- 
     <script>
-    function toggleTab(tabId, element) {
-        var tabContent = document.getElementById(tabId);
-        var isActive = tabContent.style.display === 'block';
-
-        // Hide all tab contents
-        var tabContents = document.querySelectorAll('.tab-content');
-        tabContents.forEach(function(content) {
-            content.style.display = 'none';
-        });
-
-        // Remove active class from all tabs
-        var tabs = document.querySelectorAll('.tab');
-        tabs.forEach(function(tab) {
-            tab.classList.remove('active-tab');
-            // Reset text to "Show Video Recording"
-            if (tab !== element) {
-                tab.textContent = 'Show Video Recording';
-            }
-        });
-
-        // If the clicked tab was not active, show the tab content
-        if (!isActive) {
-            tabContent.style.display = 'block';
-            element.classList.add('active-tab');
-            element.textContent = 'Hide Video Recording';
-        } else {
-            element.textContent = 'Show Video Recording';
-        }
-    }
+function toggleTab(tabId, element) {
+    var tabContent = document.getElementById(tabId);
+    var isActive = tabContent.style.display === 'block';
     
-    // Initialize all tabs to be hidden on page load
-    document.addEventListener('DOMContentLoaded', function() {
-        var tabContents = document.querySelectorAll('.tab-content');
-        tabContents.forEach(function(content) {
-            content.style.display = 'none';
-        });
-        
-        // Set all tabs to "Show Video Recording"
-        var tabs = document.querySelectorAll('.tab');
-        tabs.forEach(function(tab) {
-            tab.textContent = 'Show Video Recording';
-        });
+    // Hide all tab contents
+    var tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(function(content) {
+        content.style.display = 'none';
     });
+    
+    // Remove active class from all tabs
+    var tabs = document.querySelectorAll('.tab');
+    tabs.forEach(function(tab) {
+        tab.classList.remove('active-tab');
+        if (tab !== element) tab.textContent = 'Show Video Recording';
+    });
+    
+    if (!isActive) {
+        tabContent.style.display = 'block';
+        element.classList.add('active-tab');
+        element.textContent = 'Hide Video Recording';
+        
+        // Load video if not yet loaded (fixes autoplay)
+        var iframe = tabContent.querySelector('iframe[data-src]');
+        if (iframe && !iframe.src) {
+            iframe.src = iframe.getAttribute('data-src');
+        }
+    } else {
+        element.textContent = 'Show Video Recording';
+    }
+}
     </script>
        
 </body>
-
 </html>
-
