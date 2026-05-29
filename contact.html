@@ -12,6 +12,29 @@
       gtag('js', new Date());
       gtag('config', 'G-X7MGHDQDS1');
     </script>
+    <style>
+        /* Ensure images in contact page are responsive and not clipped */
+        .image-column img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+        }
+        /* Make PI logo visible even if it's white-on-white */
+        .image-column .logo {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            background: #eef2f5;   /* light gray background to contrast with white logo */
+            padding: 0.75rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        @media (max-width: 768px) {
+            .image-column .logo { max-width: 60%; }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -34,24 +57,45 @@
     </nav>
 
     <div class="container">
-        <div class="hero-container">
-            <div class="text-column">
-                <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    <div style="margin: 2rem 0;">
-                        <h3>Waterloo Centre for Astrophysics (WCA)</h3>
-                        <p>Office 216H<br>Department of Physics and Astronomy<br>University of Waterloo, Ontario, Canada</p>
-                        <h3>Perimeter Institute for Theoretical Physics</h3>
-                        <p>Office 461<br>31 Caroline St N, Waterloo, ON N2L 2Y5, Canada</p>
+        <section class="content-section">
+            <div class="hero-container" style="padding-top:1rem; padding-bottom:1rem;">
+                <div class="text-column">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p style="margin-bottom:1.2rem; font-size:0.95rem; color:#555;">
+                            I am always happy to discuss research, potential collaborations, or opportunities. Please feel free to reach out by email.
+                        </p>
+                        <p style="margin-bottom:1.4rem;">
+                            <a href="mailto:mshalaby@live.ca" class="btn" style="font-size:0.95rem;">mshalaby@live.ca</a>
+                        </p>
+                        <div class="location">
+                            <h3>Waterloo Centre for Astrophysics (WCA)</h3>
+                            <p>
+                                Office 216H<br>
+                                Department of Physics and Astronomy<br>
+                                University of Waterloo<br>
+                                Waterloo, Ontario, Canada
+                            </p>
+                        </div>
+                        <div class="location">
+                            <h3><br><br>Perimeter Institute for Theoretical Physics</h3>
+                            <p>
+                                Office 461<br>
+                                31 Caroline St N<br>
+                                Waterloo, ON N2L 2Y5<br>
+                                Canada
+                            </p>
+                        </div>
                     </div>
-                    <a href="mailto:mshalaby@live.ca" class="btn" style="font-size:1rem;">mshalaby@live.ca</a>
+                </div>
+
+                <div class="image-column">
+					<br><br><br><br><br><br><br><br><br><br>
+                    <img src="images/1500x500.jpeg" alt="Waterloo Centre for Astrophysics" style="width: 140%;"  class="logo" >
+                    <br><br><img src="images/pi_logo.png" alt="Perimeter Institute Logo" style="width: 140%;"  class="logo" >
                 </div>
             </div>
-            <div class="image-column">
-                <img src="images/1500x500.jpeg" alt="Waterloo Centre for Astrophysics" style="margin-bottom: 1rem;">
-                <img src="images/PI_logo.png" alt="Perimeter Institute Logo" style="width: 80%;">
-            </div>
-        </div>
+        </section>
     </div>
 
     <footer>
