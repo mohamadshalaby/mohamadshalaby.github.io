@@ -35,7 +35,7 @@
             width: 150px;
             flex-shrink: 0;
             position: sticky;
-            top: 20px;
+            top: 90px;
             background: #f9f9f9;
             border-radius: 8px;
             padding: 0.2rem;
@@ -56,9 +56,8 @@
         }
         .talks-main {
             flex: 1;
-            min-width: 0; /* prevent overflow */
+            min-width: 0;
         }
-        /* On smaller screens, stack columns */
         @media (max-width: 800px) {
             .talks-layout {
                 flex-direction: column;
@@ -69,13 +68,15 @@
                 margin-bottom: 1rem;
             }
         }
-        /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
-        /* Preserve original spacing for the sections */
         .content-section {
             margin-bottom: 2rem;
+        }
+        .tab-content {
+            display: none;
+            margin-top: 1rem;
         }
     </style>
 </head>
@@ -102,16 +103,13 @@
     </nav>
 
     <div class="container">
-        <!-- Two‑column layout inside the same container -->
         <div class="talks-layout">
-            <!-- Sidebar -->
             <aside class="talks-sidebar">
                 <strong>Talks</strong>
                 <a href="#invited-talks"> Invited Talks</a>
                 <a href="#contributed-talks"> Contributed Talks</a>
             </aside>
 
-            <!-- Main content -->
             <main class="talks-main">
                 <!-- Invited Talks section -->
                 <section class="content-section" id="invited-talks">
@@ -120,17 +118,17 @@
                         <ul reversed>
                             <li> <b>22.11.2024</b> <i> PI Cosmic Void Day, Perimeter institute for theoretical physics </i> 
                                     <br> Talk: Constraints on the intergalactic magnetic field                    
-                                <a href="https://drive.google.com/file/d/1hi0m2iyB7fowZzDR_RJb_wAd84zavsOA/view?usp=sharing"  target="_blank" class="black">  Slides </a>  
+                                <a href="https://drive.google.com/file/d/1hi0m2iyB7fowZzDR_RJb_wAd84zavsOA/view?usp=sharing"  target="_blank" class="btn">  Slides </a>  
                             </li>
                             <li> <b>30.10.2024</b> <i> Astroseminar @ Waterloo center for Astrophysics (WCA) </i> 
-                                    <br> Talk: Frontiers in Cosmic Ray Puzzles and Why They Matter  <a href="https://drive.google.com/file/d/19o7MQyAdQi3rkhXm9N_iI5FvirLpiRyD/view?usp=sharing"  target="_blank" class="black">  Slides </a>  
+                                    <br> Talk: Frontiers in Cosmic Ray Puzzles and Why They Matter  <a href="https://drive.google.com/file/d/19o7MQyAdQi3rkhXm9N_iI5FvirLpiRyD/view?usp=sharing"  target="_blank" class="btn">  Slides </a>  
                             </li>
                             <li> <b>18.07.2024</b> <i> JPP Frontiers of Plasma Physics Colloquium </i> 
-                                    <br> Talk: Cosmic-Ray Choreography: Ion-Driven Instabilities in Astrophysical Plasmas  <a href="https://drive.google.com/file/d/1GqerNbNkkWPcrAtRmI7ZOhnzQo38ou2E/view?usp=sharing"  target="_blank" class="black">  Slides </a> &    <a href="https://cassyni.com/events/Dnb7hrRFRbH5gkerfZPNFo"  target="_blank" class="black"> Video recording @ JPP website </a>  
+                                    <br> Talk: Cosmic-Ray Choreography: Ion-Driven Instabilities in Astrophysical Plasmas  <a href="https://drive.google.com/file/d/1GqerNbNkkWPcrAtRmI7ZOhnzQo38ou2E/view?usp=sharing"  target="_blank" class="btn">  Slides </a> &    <a href="https://cassyni.com/events/Dnb7hrRFRbH5gkerfZPNFo"  target="_blank" class="btn"> Video recording @ JPP website </a>  
                             </li>
                             <li> <b>26.10.2023</b> <i>Strong Gravity Seminar, Perimeter Institute for Theoretical Physics</i> Waterloo, Canada<br> <i>Talk: Unveiling a Novel Plasma Instability: Impacts on Galaxy Formation and Electron Acceleration at Shocks</i>
                                 <p>
-                                <center>  <div class="btn" onclick="toggleTab('videoTab2', this)"> Show video recording </div> </center>
+                                <center>  <div class="btn" onclick="toggleVideo('videoTab2', this)"> Show video recording </div> </center>
                                 <div id="videoTab2" class="tab-content"> 
                                     <center> <iframe width="60%" height="300" data-src="https://streamer2.perimeterinstitute.ca/mp4-med/23100116.mp4" title="pirsa.org 23100116" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
                                 </div>
@@ -146,7 +144,7 @@
                             </li>
                             <li> <b>21.09.2022</b> <i>Astro Seminar, Waterloo Center for Astrophysics </i>Waterloo, Canada<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
                                 <p>    
-                                <center>  <div class="btn" onclick="toggleTab('videoTab1', this)">Show video recording</div> </center>
+                                <center>  <div class="btn" onclick="toggleVideo('videoTab1', this)">Show video recording</div> </center>
                                 <div id="videoTab1" class="tab-content"> 
                                     <center> <iframe width="60%" height="300" data-src="https://www.youtube.com/embed/BQcDROftzpE?si=UQY7KPE_VpUc62W2" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
                                 </div>
@@ -185,16 +183,16 @@
                     <div class="teaching-card">
                         <h2>Selected Contributed Talks</h2>
                         <ul reversed>
-							<li> <b>27.04.2026</b> <i> Cosmological Frontiers in Fundamental Physics 2026, Perimeter institute, waterloo </i> 
-								<br> Talk: The Sound of the Universe: A Resonant Gravitational Instability Driven by Baryon-Dark Matter Relative Drift
-								<a href="https://drive.google.com/file/d/14Ner1vsD9xwxryOpKAwpMOlICP9JkVJX/view?usp=sharing"  target="_blank" class="black">  Slides </a>  
+                            <li> <b>27.04.2026</b> <i> Cosmological Frontiers in Fundamental Physics 2026, Perimeter institute, waterloo </i> 
+                                <br> Talk: The Sound of the Universe: A Resonant Gravitational Instability Driven by Baryon-Dark Matter Relative Drift
+                                <a href="https://drive.google.com/file/d/14Ner1vsD9xwxryOpKAwpMOlICP9JkVJX/view?usp=sharing"  target="_blank" class="btn">  Slides </a>  
                                 <p>    
-                                    <center>  <div class="btn" onclick="toggleTab('videoTab4', this)">Show video recording</div> </center>
+                                    <center>  <div class="btn" onclick="toggleVideo('videoTab4', this)">Show video recording</div> </center>
                                     <div id="videoTab4" class="tab-content"> 
-                                        <center> <iframe width="60%" height="300" data-src="https://streamer2.perimeterinstitute.ca/mp4-med/26040114.mp4" title="PIRSA reconding" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
+                                        <center> <iframe width="60%" height="300" data-src="https://streamer2.perimeterinstitute.ca/mp4-med/26040114.mp4" title="PIRSA recording" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
                                     </div>
                                 </p>
-							</li>
+                            </li>
                            <li> <b>15.09.2023</b> <i>Exploring the Causes and Consequences of Solar Flares, CMEs, and other Transient Splinter, Annual Meeting of the Astronomische Gesellschaft 2023, </i>Berlin, Germany<br> <i>Talk: A new Cosmic-ray driven instability</i>
                             </li>
                             <li> <b>14.09.2023</b> <i>Physics of compact objects: From observations to theoretical investigations Splinter, Annual Meeting of the Astronomische Gesellschaft 2023, </i>Berlin, Germany<br> <i>Talk: Towards a Physical Understanding of Plasma Dynamics in the Vicinity of Compact Objects</i>
@@ -207,11 +205,11 @@
                             </li>
                             <li> <b>26.07.2022</b> <i>27th European Cosmic Ray Symposium (ECRS) 2022, </i>Nijmegen, The Netherlands<br> <i>Talk: The mechanism of efficient electron acceleration at parallel non-relativistic shocks</i>
                             </li>
-                            <li> <b>15.07.2021</b> <i>37th International Cosmic Ray Conference, </i>Virtual<br>  <a href="https://video.desy.de/video/A-New-Cosmic2DRay2Ddriven-Instability/eab67d8307db0d0101cb8c15f762cb09"  target="_blank" class="black"> <i>Talk: A New Cosmic-Ray-driven Instability</i> </a>
+                            <li> <b>15.07.2021</b> <i>37th International Cosmic Ray Conference, </i>Virtual<br>  <a href="https://video.desy.de/video/A-New-Cosmic2DRay2Ddriven-Instability/eab67d8307db0d0101cb8c15f762cb09"  target="_blank" class="btn"> <i>Talk: A New Cosmic-Ray-driven Instability</i> </a>
                                 <p>    
-                                    <center>  <div class="btn" onclick="toggleTab('videoTab3', this)">Show video recording</div> </center>
+                                    <center>  <div class="btn" onclick="toggleVideo('videoTab3', this)">Show video recording</div> </center>
                                     <div id="videoTab3" class="tab-content"> 
-                                        <center> <iframe width="60%" height="300" data-src="https://video.desy.de/getMedium/eab67d8307db0d0101cb8c15f762cb09.mp4" title="ICRC reconding" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
+                                        <center> <iframe width="60%" height="300" data-src="https://video.desy.de/getMedium/eab67d8307db0d0101cb8c15f762cb09.mp4" title="ICRC recording" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </center>
                                     </div>
                                 </p>
                             </li>
@@ -229,58 +227,53 @@
                     </div>
                 </section>
             </main>
-        </div> <!-- end talks-layout -->
-    </div> <!-- end container -->
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Mohamad Shalaby <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8204;</span></p>
+        <p>&copy; 2025 Mohamad Shalaby</p>
     </footer>
 
     <script>
-        function toggleTab(id, element) {
-            const tabContent = document.getElementById(id);
-            if (tabContent.style.display === 'block') {
-                tabContent.style.display = 'none';
-                element.textContent = 'Show video recording';
+        // Single toggle function: loads video src only when user clicks "Show"
+        function toggleVideo(tabId, btnElement) {
+            var contentDiv = document.getElementById(tabId);
+            var isVisible = contentDiv.style.display === 'block';
+            
+            // Hide all video containers first
+            var allContents = document.querySelectorAll('.tab-content');
+            allContents.forEach(function(div) {
+                div.style.display = 'none';
+            });
+            
+            // Reset all buttons text (except the one we're toggling)
+            var allButtons = document.querySelectorAll('.btn[onclick^="toggleVideo"]');
+            allButtons.forEach(function(btn) {
+                if (btn !== btnElement) {
+                    btn.textContent = 'Show video recording';
+                }
+            });
+            
+            if (!isVisible) {
+                contentDiv.style.display = 'block';
+                btnElement.textContent = 'Hide video recording';
+                
+                // Load the video if not already loaded
+                var iframe = contentDiv.querySelector('iframe[data-src]');
+                if (iframe && !iframe.src) {
+                    iframe.src = iframe.getAttribute('data-src');
+                    iframe.removeAttribute('data-src');
+                }
             } else {
-                tabContent.style.display = 'block';
-                element.textContent = 'Hide video recording';
+                contentDiv.style.display = 'none';
+                btnElement.textContent = 'Show video recording';
+                // Optionally unload video to stop playback
+                var iframe = contentDiv.querySelector('iframe');
+                if (iframe && iframe.src) {
+                    iframe.src = '';
+                }
             }
         }
-    </script>
-    
-    <script>
-function toggleTab(tabId, element) {
-    var tabContent = document.getElementById(tabId);
-    var isActive = tabContent.style.display === 'block';
-    
-    // Hide all tab contents
-    var tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(function(content) {
-        content.style.display = 'none';
-    });
-    
-    // Remove active class from all tabs
-    var tabs = document.querySelectorAll('.tab');
-    tabs.forEach(function(tab) {
-        tab.classList.remove('active-tab');
-        if (tab !== element) tab.textContent = 'Show Video Recording';
-    });
-    
-    if (!isActive) {
-        tabContent.style.display = 'block';
-        element.classList.add('active-tab');
-        element.textContent = 'Hide Video Recording';
-        
-        // Load video if not yet loaded (fixes autoplay)
-        var iframe = tabContent.querySelector('iframe[data-src]');
-        if (iframe && !iframe.src) {
-            iframe.src = iframe.getAttribute('data-src');
-        }
-    } else {
-        element.textContent = 'Show Video Recording';
-    }
-}
     </script>
        
 </body>
