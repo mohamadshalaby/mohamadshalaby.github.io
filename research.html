@@ -3,202 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research by Mohamad Shalaby — plasma instabilities, cosmic rays, collisionless shocks, dark matter.">
     <title>Research | Mohamad Shalaby</title>
     <link rel="stylesheet" href="style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7MGHDQDS1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-X7MGHDQDS1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X7MGHDQDS1');
     </script>
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <style>
-        .research-layout { display: flex; gap: 2rem; align-items: flex-start; margin: 2rem 0; }
-        .research-sidebar { width: 240px; flex-shrink: 0; position: sticky; top: 90px; background: white; border-radius: 20px; padding: 1.2rem 0.8rem; border: 1px solid #eef2f6; }
-        .research-sidebar a { display: block; color: #2c3e50; text-decoration: none; padding: 8px 12px; margin: 4px 0; border-radius: 12px; font-weight: 500; }
-        .research-sidebar a:hover { background: #eef2fa; color: #2c7da0; }
-        .research-main { flex: 1; min-width: 0; }
-        @media (max-width: 800px) { .research-layout { flex-direction: column; } .research-sidebar { width: 100%; position: static; margin-bottom: 1rem; } }
-        .research-section, .publications { scroll-margin-top: 85px; }
-    </style>
 </head>
 <body>
+
     <header>
         <div class="container">
             <h1>Mohamad Shalaby</h1>
-            <p>Plasma Astrophysicist | HAPI Research Associate</p>
+            <p>Plasma Astrophysicist &nbsp;|&nbsp; HAPI Research Associate</p>
         </div>
     </header>
+
     <nav>
         <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
                 <li><a href="teaching.html">Teaching</a></li>
                 <li><a href="talks.html">Talks</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
+
     <div class="container">
         <div class="research-layout">
-            <div class="research-sidebar">
-                <strong>Research Projects</strong>
+
+            <aside class="research-sidebar">
+                <strong>Projects</strong>
                 <a href="#sound-of-universe">Sound of Universe</a>
-                <a href="#cosmic-ray">Cosmic Ray</a>
-                <a href="#electron-shocks">Electron Shocks</a>
+                <a href="#cosmic-ray">Cosmic Rays</a>
+                <a href="#electron-shocks">Particle Acceleration</a>
                 <a href="#sharp-code">SHARP Code</a>
-                <a href="#beam-plasma">Beam-Plasma instabilities</a>
+                <a href="#beam-plasma">Beam-Plasma</a>
                 <a href="#dark-photon">Dark Photon</a>
-            </div>
+                <a href="#publications">Publications</a>
+            </aside>
+
             <div class="research-main">
-                <!-- Sound of the Universe -->
+
                 <div class="research-section" id="sound-of-universe">
-                    <div class="section-header"><h2 class="section-title">The Sound of the Universe: Resonant Gravitational Instability</h2></div>
-                    <p>We discovered a new resonant gravitational instability driven by the relative drift between baryons and dark matter after decoupling. When the projected dark matter drift is subsonic, baryon sound waves resonate with Doppler‑shifted dark matter modes, producing exponential growth that exceeds the intrinsic dark matter growth rate. The instability operates on short timescales (years to Myr) across all scales – from planets to galaxy clusters – and naturally explains long‑standing puzzles: the persistence of spiral arms in galaxies, the heating of the intracluster medium (cooling flow problem), turbulence in molecular clouds, and high‑frequency solar oscillations. It also introduces a collisionless drag that may alleviate the Hubble and σ<sub>8</sub> tensions and offers direct observational tests via seismic vibrations (Earth, Moon, ice sheets) and pulsar timing arrays.</p>
+                    <div class="section-header">
+                        <h2 class="section-title">The Sound of the Universe: Resonant Gravitational Instability</h2>
+                    </div>
+                    <p>We discovered a new resonant gravitational instability driven by the relative drift between baryons and dark matter after decoupling. When the projected dark matter drift is subsonic, baryon sound waves resonate with Doppler-shifted dark matter modes, producing exponential growth that exceeds the intrinsic dark matter growth rate. The instability operates on short timescales (years to Myr) across all scales — from planets to galaxy clusters — and naturally explains long-standing puzzles: the persistence of spiral arms in galaxies, the heating of the intracluster medium (cooling flow problem), turbulence in molecular clouds, and high-frequency solar oscillations.</p>
                     <div class="project-grid">
                         <div class="project-card">
                             <h3>Resonant Gravitational Instability</h3>
                             <p>First comprehensive analysis of a new instability that alters the standard picture of gravitational structure formation, unifying subsonic enhancement and supersonic suppression of baryon perturbations.</p>
-                            <a href="https://arxiv.org/abs/2604.22665" target="_blank" class="btn">arXiv:2604.22665 & Submitted to ApJ</a>
+                            <a href="https://arxiv.org/abs/2604.22665" target="_blank" class="btn">arXiv:2604.22665 (submitted to ApJ)</a>
                         </div>
                         <div class="project-card">
-                            <h3>Astrophysical & Cosmological Implications</h3>
-                            <p>From driving spiral arms in galaxies to heating the intracluster medium and seeding Population III stars – the instability provides a new lens on dark matter–baryon interactions across all scales.</p>
+                            <h3>Astrophysical &amp; Cosmological Implications</h3>
+                            <p>From driving spiral arms in galaxies to heating the intracluster medium and seeding Population III stars — the instability provides a new lens on dark matter–baryon interactions across all scales.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Cosmic Ray Research -->
+
                 <div class="research-section" id="cosmic-ray">
-                    <div class="section-header"><h2 class="section-title">Cosmic Ray Research</h2></div>
-                    <p>My research here focuses on understanding the microphysics of cosmic ray transport and their significant impact on astrophysical environments, from the interstellar medium to galaxy clusters.</p>
+                    <div class="section-header">
+                        <h2 class="section-title">Cosmic-Ray Transport &amp; Instabilities</h2>
+                    </div>
+                    <p>My research focuses on understanding the microphysics of cosmic ray transport and their significant impact on astrophysical environments, from the interstellar medium to galaxy clusters. I have discovered a novel CR-driven instability at intermediate scales that fundamentally changes how cosmic rays interact with surrounding plasma.</p>
                     <div class="project-grid">
                         <div class="project-card">
                             <h3>Intermediate-Scale Instability</h3>
-                            <p>Discovered a novel CR-driven instability that grows significantly faster than previously known instabilities, with profound implications for CR transport and electron acceleration.</p>
-                            <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...908..206S/abstract" target="_blank" class="btn">Paper 1 (ApJ)</a>
-                            <a href="https://ui.adsabs.harvard.edu/abs/2023JPlPh..89f1703S/abstract" target="_blank" class="btn">Paper 2 (JPP Letter)</a>
+                            <p>A newly discovered cosmic-ray-driven instability that grows significantly faster than previously known instabilities, with profound implications for CR transport and electron acceleration in galactic halos.</p>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...908..206S/abstract" target="_blank" class="btn">ApJ 2021</a>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2023JPlPh..89f1703S/abstract" target="_blank" class="btn">JPP Letter 2023</a>
                         </div>
                         <div class="project-card">
-                            <h3>Saturation mechanisms</h3>
-                            <p>Developing predictive frameworks for nonlinear saturation mechanisms of CR driven instabilities which dictate their transport.</p>
-                            <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...979...34L/abstract" target="_blank" class="btn">Read Paper (ApJ)</a>
-                        </div>
-                        <div class="project-card">
-                            <h3>CR Transport Modeling</h3>
-                            <p>Developing predictive frameworks for CR transport that move beyond quasi-linear theory limitations, incorporating nonlinear saturation effects in realistic astrophysical conditions.</p>
-                        </div>
-                        <div class="project-card">
-                            <h3>Galactic and stellar Feedback</h3>
-                            <p>Investigating how CRs drive galactic winds, regulate star formation, and contribute to anomalous ionization in molecular clouds through advanced plasma simulations.</p>
+                            <h3>Nonlinear Saturation Mechanisms</h3>
+                            <p>Developing predictive frameworks for nonlinear saturation of CR-driven instabilities which dictate their transport properties in realistic astrophysical conditions.</p>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...979...34L/abstract" target="_blank" class="btn">ApJ 2025</a>
                         </div>
                     </div>
                 </div>
-                <!-- Electron Acceleration at Shocks -->
+
                 <div class="research-section" id="electron-shocks">
-                    <div class="section-header"><h2 class="section-title">Electron Acceleration at Shocks</h2></div>
-                    <p>Investigating electron and ion acceleration mechanisms in astrophysical shocks, from supernova remnants to intracluster medium, with emphasis on the role of plasma instabilities.</p>
+                    <div class="section-header">
+                        <h2 class="section-title">Particle Acceleration at Collisionless Shocks</h2>
+                    </div>
+                    <p>Using particle-in-cell (PIC) simulations with the SHARP code, I study the microphysics of electron-ion collisionless shocks relevant to supernova remnants, galaxy clusters, and other astrophysical environments. This work elucidates the mechanism by which shocks efficiently accelerate particles to suprathermal energies.</p>
                     <div class="visualizations">
                         <div class="viz-card">
                             <div class="viz-content">
-                                <h3>Efficient electron acceleration via intermediate-scale instability</h3>
-                                <p>By changing the Alfvénic Mach number, <i>M<sub>A</sub></i>, we show that the shocks where intermediate-scale instability operates have a much higher electron acceleration efficiency compared to high <i>M<sub>A</sub></i> shocks, i.e., <i>M<sub>A</sub> > 10</i>.</p>
-                                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac6ce7" target="_blank" class="btn">Read Paper (ApJ)</a>
+                                <h3>Efficient Electron Acceleration via Intermediate-Scale Instability</h3>
+                                <p>By varying the Alfvénic Mach number, we show that shocks where the intermediate-scale instability operates achieve substantially higher electron acceleration efficiency.</p>
+                                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac6ce7" target="_blank" class="btn">Read Paper</a>
                             </div>
                         </div>
                         <div class="viz-card">
                             <div class="viz-content">
-                                <h3>Effect of ion-to-electron separation on energy dissipation at shocks</h3>
-                                <p>Study of how mass ratio variations affect shock dynamics and particle acceleration.</p>
-                                <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad99d8" target="_blank" class="btn">Read Paper (ApJL)</a>
-                                <a href="Pshock_mr.html" target="_blank" class="btn">View Simulation</a>
+                                <h3>Ion-to-Electron Mass Ratio Effects</h3>
+                                <p>Study demonstrating that simulations using the realistic mass ratio m_i/m_e = 1836 are essential for drawing accurate physical conclusions about shock dynamics.</p>
+                                <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad99d8" target="_blank" class="btn">ApJL 2024</a>
+                                <a href="Pshock_mr.html" target="_blank" class="btn">View Simulations</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="visualizations">
                         <div class="viz-card">
                             <div class="viz-content">
-                                <h3>Impact of Magnetization on the Formation and Dynamics of Parallel Electron-Ion Collisionless Shocks</h3>
-                                <p>Using particle-in-cell simulations, we investigated how ion magnetization (σi) affects parallel electron-ion collisionless shocks and found that strongly magnetized shocks (σi > 1) exhibit lower compression ratios and suppressed particle acceleration while maintaining stability, whereas weakly magnetized shocks drive instabilities and generate suprathermal particles through shock-drift acceleration.</p>
-                                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf84f" target="_blank" class="btn">Read Paper (ApJ)</a>
-                                <a href="Pshock_Sig01.html" target="_blank" class="btn">View Simulation</a>
+                                <h3>Impact of Magnetization on Parallel Shocks</h3>
+                                <p>Investigation of how ion magnetization affects parallel electron-ion collisionless shocks. Strongly magnetized shocks exhibit lower compression ratios and suppressed particle acceleration.</p>
+                                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf84f" target="_blank" class="btn">ApJ 2025</a>
+                                <a href="Pshock_Sig01.html" target="_blank" class="btn">View Simulations</a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <h3>Shock Obliquity Dependence</h3>
-                            <p>Systematically studying how magnetic field orientation affects electron acceleration efficiency in non-relativistic shocks.</p>
-                        </div>
-                        <div class="project-card">
-                            <h3>Low Mach Number Shocks</h3>
-                            <p>Investigating electron acceleration in low Mach number shocks relevant to structure formation in the intracluster medium.</p>
                         </div>
                     </div>
                 </div>
-                <!-- SHARP Code Development -->
+
                 <div class="research-section" id="sharp-code">
-                    <div class="section-header"><h2 class="section-title">SHARP Code Development</h2></div>
-                    <p>As the primary developer of the SHARP code, I've created a highly accurate plasma dynamics simulator that enables previously intractable simulations of astrophysical plasmas.</p>
+                    <div class="section-header">
+                        <h2 class="section-title">SHARP Code Development</h2>
+                    </div>
+                    <p>As the primary developer of the SHARP (Spectral Highly Accurate Relativistic PIC) code, I have created a highly accurate plasma dynamics simulator that enables previously intractable simulations of astrophysical plasmas. The code features up to 5th-order spline interpolation, achieving three-order-of-magnitude improvements in energy conservation.</p>
                     <div class="project-grid">
                         <div class="project-card">
-                            <h3>High-Order Accuracy</h3>
-                            <p>Implemented up to 5th-order spline interpolation for field gathering and particle scattering, achieving three-order-of-magnitude improvement in energy conservation.</p>
-                            <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...841...52S/abstract" target="_blank" class="btn">Read Paper (ApJ)</a>
+                            <h3>High-Order Accuracy Methods</h3>
+                            <p>Implemented up to 5th-order spline interpolation for field gathering and particle scattering, dramatically improving energy conservation over standard PIC methods.</p>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...841...52S/abstract" target="_blank" class="btn">ApJ 2017</a>
                         </div>
                         <div class="project-card">
                             <h3>Hybrid Framework</h3>
-                            <p>Integrated kinetic, ideal fluid, and Landau-fluid plasma descriptions in a unified framework for multi-scale astrophysical simulations.</p>
-                            <a href="https://ui.adsabs.harvard.edu/abs/2024JPlPh..90a9004L/abstract" target="_blank" class="btn">Read Paper (JPP)</a>
+                            <p>Integrated kinetic, ideal fluid, and Landau-fluid plasma descriptions in a unified framework enabling multi-scale astrophysical simulations.</p>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2024JPlPh..90a9004L/abstract" target="_blank" class="btn">JPP 2024</a>
                         </div>
                     </div>
                 </div>
-                <!-- Beam-Plasma Instabilities -->
+
                 <div class="research-section" id="beam-plasma">
-                    <div class="section-header"><h2 class="section-title">Beam-Plasma Instabilities</h2></div>
-                    <p>I investigate the nonlinear evolution of beam-plasma instabilities in diverse astrophysical environments, ranging from solar radio bursts to the intergalactic medium (IGM).</p>
-                    <p>Specifically, within the IGM, these instabilities are critical for constraining the strength of intergalactic magnetic fields and may be responsible for substantial heating in the large, empty regions known as cosmic voids.</p>
+                    <div class="section-header">
+                        <h2 class="section-title">Beam-Plasma Instabilities</h2>
+                    </div>
+                    <p>I investigate the nonlinear evolution of beam-plasma instabilities in diverse astrophysical environments, from solar radio bursts to the intergalactic medium. These instabilities are critical for constraining the strength of intergalactic magnetic fields and understanding energy dissipation in cosmic voids.</p>
                     <div class="project-grid">
                         <div class="project-card">
                             <h3>Nonlinear Saturation</h3>
-                            <p>Investigating the nonlinear saturation mechanisms of beam-plasma instabilities and their impact on cosmic magnetic field origins.</p>
-                            <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...848...81S/abstract" target="_blank" class="btn">Paper 1</a>
+                            <p>Investigation of nonlinear saturation mechanisms of beam-plasma instabilities and their impact on constraints on cosmic magnetic field origins.</p>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...848...81S/abstract" target="_blank" class="btn">ApJ 2017</a>
                         </div>
                         <div class="project-card">
-                            <h3>Inhomogeneous Background Effects</h3>
-                            <p>Demonstrated how density gradients can significantly enhance or suppress beam-plasma instabilities in realistic astrophysical environments.</p>
-                            <a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...859...45S/abstract" target="_blank" class="btn">Paper 1</a>
-                            <a href="https://ui.adsabs.harvard.edu/abs/2020JPlPh..86b5301S/abstract" target="_blank" class="btn">Paper 2</a>
+                            <h3>Inhomogeneous Backgrounds</h3>
+                            <p>Demonstrated how density gradients significantly enhance or suppress beam-plasma instabilities in realistic astrophysical environments.</p>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...859...45S/abstract" target="_blank" class="btn">ApJ 2018</a>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2020JPlPh..86b5301S/abstract" target="_blank" class="btn">JPP 2020</a>
                         </div>
                     </div>
                 </div>
-                <!-- Constraints on dark photon dark matter -->
+
                 <div class="research-section" id="dark-photon">
-                    <div class="section-header"><h2 class="section-title">Constraints on dark photon dark matter</h2></div>
-                    <p>Using PIC simulations, we re-examine and invalidate all constraints on dark photon dark matter from its resonant conversion to plasmons in the early universe.</p>
+                    <div class="section-header">
+                        <h2 class="section-title">Dark Photon Dark Matter</h2>
+                    </div>
+                    <p>Using particle-in-cell simulations, we re-examine and overturn all previous cosmological constraints on dark photon dark matter by demonstrating that its resonant conversion into ordinary plasma is highly inefficient, saturating at very low levels due to nonlinear plasma dynamics. This work shows that constraints are weakened by factors of 3,000 to 10 million, rendering dark photon dark matter effectively undetectable by current and near-future cosmological observations.</p>
                     <div class="project-grid">
                         <div class="project-card">
-                            <a href="https://arxiv.org/abs/2510.13956" target="_blank" class="btn">Paper</a>
-                            <a href="DPDM.html" target="_blank" class="btn">View Simulation</a>
+                            <h3>Resonant Conversion &amp; Nonlinear Saturation</h3>
+                            <p>Hook, Huang &amp; Shalaby (2025): Comprehensive study of dark photon dark matter resonant conversion in the early universe, showing saturation due to nonlinear plasma effects.</p>
+                            <a href="https://arxiv.org/abs/2510.13956" target="_blank" class="btn">arXiv:2510.13956</a>
+                            <a href="DPDM.html" target="_blank" class="btn">View Simulations</a>
                         </div>
                     </div>
                 </div>
-                <div class="publications">
+
+                <div class="publications" id="publications">
                     <h2>Selected Publications</h2>
-                    <p>Complete list: <a href="https://scholar.google.ca/citations?user=KCgpd4UAAAAJ&hl=en" target="_blank" class="btn">Google Scholar</a></p>
+                    <p style="font-size: 0.95rem; margin-bottom: 1.2rem;">
+                        <a href="https://scholar.google.ca/citations?user=KCgpd4UAAAAJ&hl=en" target="_blank" class="btn">Full list on Google Scholar</a>
+                    </p>
                     <ul class="pub-list">
-                        <li>[2026] <strong>Shalaby, M.</strong> & Broderick, A., "The Sound of the Universe: A Resonant Gravitational Instability Driven by Baryon–Dark Matter Relative Drift", <em>arXiv:2604.22665</em>, submitted to ApJ</li>
-                        <li>[2025] <strong>Shalaby, M.</strong>, Bret, A., and Fraschetti, F., "Parallel Collisionless Shocks in strongly Magnetized Electron-Ion Plasma. I. Temperature anisotropies", <em> ApJ </em>991 26</li>
-                        <li>[2024] <strong>Shalaby, M.</strong>, "Energy Dissipation in Strong Collisionless Shocks: The Crucial Role of Ion-to-electron Scale Separation in Particle-in-cell Simulations", <em>ApJL</em>  977 L43</li>
-                        <li>[2023] <strong>Shalaby, M.</strong>, Thomas, T., Pfrommer, C., Lemmerz, R., and Bresci, V., "Deciphering the physical basis of the intermediate-scale instability", <em>JPP Letters</em> 89.6</li>
-                        <li>[2022] <strong>Shalaby, M.</strong>, Lemmerz, R., Thomas, T., and Pfrommer, C., "The Mechanism of Efficient Electron Acceleration at Parallel Nonrelativistic Shocks", <em>ApJ</em>  932 86</li>
-                        <li>[2021] <strong>Shalaby, M.</strong>, Thomas, T., and Pfrommer, C., "A New Cosmic-Ray-driven Instability", <em>ApJ</em> 908 206</li>
+                        <li>[2026] <strong>Shalaby, M.</strong> &amp; Broderick, A., "The Sound of the Universe: A Resonant Gravitational Instability Driven by Baryon–Dark Matter Relative Drift", <em>arXiv:2604.22665</em>, submitted to ApJ</li>
+                        <li>[2025] Hook, A., Huang, J., &amp; <strong>Shalaby, M.</strong>, "No cosmological constraints on dark photon dark matter from resonant conversion: Impact of nonlinear plasma dynamics", <em>arXiv:2510.13956</em></li>
+                        <li>[2025] <strong>Shalaby, M.</strong>, Bret, A., &amp; Fraschetti, F., "Parallel Collisionless Shocks in strongly Magnetized Electron-Ion Plasma. I. Temperature anisotropies", <em>ApJ</em> 991, 26</li>
+                        <li>[2024] <strong>Shalaby, M.</strong>, "Energy Dissipation in Strong Collisionless Shocks: The Crucial Role of Ion-to-electron Scale Separation in Particle-in-cell Simulations", <em>ApJL</em> 977, L43</li>
+                        <li>[2024] Lemmerz, R., Thomas, T., <strong>Shalaby, M.</strong>, et al., "A Hybrid Framework for the SHARP PIC Code", <em>JPP</em> 90</li>
+                        <li>[2023] <strong>Shalaby, M.</strong>, Thomas, T., Pfrommer, C., Lemmerz, R., &amp; Bresci, V., "Deciphering the Physical Basis of the Intermediate-Scale Instability", <em>JPP Letters</em> 89</li>
+                        <li>[2022] <strong>Shalaby, M.</strong>, Lemmerz, R., Thomas, T., &amp; Pfrommer, C., "The Mechanism of Efficient Electron Acceleration at Parallel Non-relativistic Shocks", <em>ApJ</em> 932, 86</li>
+                        <li>[2021] <strong>Shalaby, M.</strong>, Thomas, T., &amp; Pfrommer, C., "A New Cosmic-Ray-Driven Instability", <em>ApJ</em> 908, 206</li>
+                        <li>[2020] <strong>Shalaby, M.</strong> et al., "The Growth of the Longitudinal Beam–Plasma Instability in the Presence of an Inhomogeneous Background", <em>JPP</em> 86 — <strong>Featured Article</strong></li>
+                        <li>[2018] <strong>Shalaby, M.</strong> et al., "Importance of Resolving the Spectral Support of Beam-Plasma Instabilities in Simulations", <em>ApJ</em> 859, 45</li>
+                        <li>[2017] <strong>Shalaby, M.</strong> et al., "SHARP: A Spatially Higher-order, Relativistic Particle-in-Cell Code", <em>ApJ</em> 841, 52</li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
-    <footer><p>&copy; 2025 Mohamad Shalaby</p></footer>
+
+    <footer>
+        <p>&copy; 2025 Mohamad Shalaby</p>
+    </footer>
+
 </body>
 </html>
