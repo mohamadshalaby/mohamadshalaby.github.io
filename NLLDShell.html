@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saturation Mechanism of Cosmic Ray Streaming Instabilities with a Shell Distribution — Shalaby, Lemmerz & Pfrommer. Simulation animations: gyro-phase bunching saturates the CR streaming instability.">
+    <title>CR Streaming Instability: Gyro-Phase Bunching Saturation | Mohamad Shalaby</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7MGHDQDS1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X7MGHDQDS1');
+    </script>
+    <script>
+        window.MathJax = { tex: { inlineMath: [['\\(', '\\)']] } };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .sim-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 2rem 0 0 0;
+            border-bottom: 2px solid #eef2f6;
+        }
+        .sim-tab {
+            background: none;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: #666;
+            border-radius: 6px 6px 0 0;
+            transition: all 0.2s ease;
+            margin-bottom: -2px;
+        }
+        .sim-tab:hover:not(.active) {
+            background: #f5f5f5;
+            color: #1a2a3a;
+        }
+        .sim-tab.active {
+            color: #1a2a3a;
+            background: #f8f9fc;
+            border-bottom: 2px solid #c8a96e;
+        }
+        .sim-panel { display: none; }
+        .sim-panel.active { display: block; }
+        .sim-note {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 1rem 0 0 0;
+            padding: 1rem 1.2rem;
+            background: #f8f9fc;
+            border-radius: 8px;
+            border-left: 3px solid #c8a96e;
+        }
+        .video-container2 {
+            max-width: 100%;
+        }
+        @media (max-width: 768px) {
+            .sim-tabs { gap: 0.3rem; }
+            .sim-tab { padding: 0.6rem 0.8rem; font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mohamad Shalaby</h1>
+            <p>Plasma Astrophysicist | HAPI Research Associate</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h2 style="text-align:center;">Saturation Mechanism of Cosmic Ray Streaming Instabilities with a Shell Distribution</h2>
+            <h4 style="text-align:center;">
+                Mohamad Shalaby, Rouven Lemmerz, and Christoph Pfrommer
+            <br>
+                <a href="https://arxiv.org/abs/2609.xxxxx" target="_blank" class="btn">arXiv:2609.xxxxx</a>
+<!--
+                <a href="#" target="_blank" class="btn">Submitted to ApJ</a>
+-->
+                <a >Submitted to ApJ</a>
+            </h4>
+            <br>
+            <p>Using fully kinetic particle-in-cell (PIC) simulations, we show that the cosmic-ray (CR) streaming instability driven by CRs with a shell momentum distribution saturates through <strong>gyro-phase bunching</strong> around the resonantly driven Alfv&eacute;n waves. Fluid-PIC (FPIC) simulations with both ideal and Landau closures reproduce the same saturation amplitude, \(\delta B/B_0 \approx 0.25\), and the same bunching mechanism &mdash; including the ideal-closure run, in which nonlinear Landau damping (NLLD) is entirely absent by construction. This indicates that NLLD is <em>not</em> the dominant saturation channel at our parameters (\(v_A = 0.01c\), \(n_{\rm CR}/n_i = 0.01\)), in tension with common assumptions in subgrid CR-transport models.</p>
+            <br>
+            <p>Below, for each of the four simulations shown in Figures&nbsp;2 and 4 of the paper, we show two animations: (1) the evolution of the CR ion phase-space distribution together with the helicity-resolved magnetic-field Fourier amplitudes, and (2) the gyro-phase bunching of CR ions at resonant pitch angles (\(\mu \in [0.9,1.0]\) driving right-handed modes, and \(\mu \in [-1.0,-0.9]\) driving left-handed modes) around the driven waves.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 style="margin-top:2rem;">Simulation Animations</h2>
+
+        <div class="sim-tabs">
+            <button class="sim-tab active" data-sim="pic5">5&lambda;<sub>m</sub> PIC</button>
+            <button class="sim-tab" data-sim="fpicideal5">5&lambda;<sub>m</sub> FPIC Ideal</button>
+            <button class="sim-tab" data-sim="fpiclandau5">5&lambda;<sub>m</sub> FPIC Landau</button>
+            <button class="sim-tab" data-sim="fpicideal50">50&lambda;<sub>m</sub> FPIC Ideal</button>
+        </div>
+
+        <div id="pic5" class="sim-panel active">
+            <p class="sim-note">Fully kinetic PIC simulation, domain \(L \simeq 5.42\,\lambda_m\). Background electrons and ions are evolved kinetically, so NLLD is included self-consistently with no approximation.</p>
+            <div class="video-container2">
+                <div class="video-panel">
+                    <div class="video-title">Phase-space evolution &amp; helicity-resolved Fourier amplitudes</div>
+                    <video controls>
+                        <source src="Videos/NLLDShell/PIC_5lm_PhaseSpace.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="video-panel">            
+                    <div class="video-title">Gyro-phase bunching at resonant pitch angles</div>
+                    <video controls>
+                        <source src="Videos/NLLDShell/PIC_5lm_Gyrophase.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div id="fpicideal5" class="sim-panel">
+            <p class="sim-note">FPIC simulation with an ideal-fluid closure for the background, domain \(L \simeq 5.42\,\lambda_m\). This closure omits NLLD (and any other background damping channel) entirely by construction.</p>
+            <div class="video-container2">
+                <div class="video-panel">
+                    <div class="video-title">Phase-space evolution &amp; helicity-resolved Fourier amplitudes</div>
+                    <video controls>
+                        <source src="Videos/NLLDShell/FPICIdeal_5lm_PhaseSpace.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="video-panel">
+                    <div class="video-title">Gyro-phase bunching at resonant pitch angles</div>
+                    <video controls>
+                        <source src="Videos/NLLDShell/FPICIdeal_5lm_Gyrophase.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div id="fpiclandau5" class="sim-panel">
+            <p class="sim-note">FPIC simulation with a Landau-fluid closure (the \(R_{31}\) closure of Hunana et al. 2018) for the background, domain \(L \simeq 5.42\,\lambda_m\). This closure approximates linear and nonlinear Landau damping.</p>
+            <div class="video-container2">
+                <div class="video-panel">
+                    <div class="video-title">Phase-space evolution &amp; helicity-resolved Fourier amplitudes</div>
+                    <video controls>
+                        <source src="./Videos/NLLDShell/FPICLandau_5lm_PhaseSpace.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="video-panel">
+                    <div class="video-title">Gyro-phase bunching at resonant pitch angles</div>
+                    <video controls>
+                        <source src="./Videos/NLLDShell/FPICLandau_5lm_Gyrophase.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div id="fpicideal50" class="sim-panel">
+            <p class="sim-note">FPIC simulation with an ideal-fluid closure, extended domain \(L \simeq 54.2\,\lambda_m\) (\(6000\,c/\omega_{pi}\)). Used to demonstrate that the saturation amplitude and gyro-phase-bunching mechanism are local and independent of domain size.</p>
+            <div class="video-container2">
+                <div class="video-panel">
+                    <div class="video-title">Phase-space evolution &amp; helicity-resolved Fourier amplitudes</div>
+                    <video controls>
+                        <source src="Videos/NLLDShell/FPICIdeal_50lm_PhaseSpace.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="video-panel">
+                    <div class="video-title">Gyro-phase bunching at resonant pitch angles</div>
+                    <video controls>
+                        <source src="Videos/NLLDShell/FPICIdeal_50lm_Gyrophase.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer><p>&copy; 2026 Mohamad Shalaby</p></footer>
+
+    <script>
+        const simTabs = document.querySelectorAll('.sim-tab');
+        simTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.getAttribute('data-sim');
+                simTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                document.querySelectorAll('.sim-panel').forEach(p => p.classList.remove('active'));
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

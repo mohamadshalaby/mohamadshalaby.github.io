@@ -1,0 +1,7 @@
+git checkout --orphan latest_branch
+git add -A
+git commit -m "Squash history"
+git branch -D main          # or master — whatever your default branch is called
+git branch -m main          # rename current branch to main
+git gc --aggressive --prune=now
+git push origin main --force
